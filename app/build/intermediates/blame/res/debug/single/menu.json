@@ -1,34 +1,10 @@
 [
     {
-        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_main_drawer.xml",
-        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\src\\main\\res\\menu\\activity_main_drawer.xml"
-    },
-    {
-        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_main_drawer.xml",
-        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\src\\main\\res\\menu\\activity_main_drawer.xml"
-    },
-    {
-        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/menu/activity_main_drawer.xml",
-        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/src/main/res/menu/activity_main_drawer.xml"
-    },
-    {
-        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
-        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\src\\main\\res\\menu\\main.xml"
-    },
-    {
-        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/menu/main.xml",
-        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/src/main/res/menu/main.xml"
-    },
-    {
         "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/menu/main.xml",
         "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/src/main/res/menu/main.xml"
     },
     {
         "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/menu/activity_main_drawer.xml",
         "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/src/main/res/menu/activity_main_drawer.xml"
-    },
-    {
-        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
-        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\src\\main\\res\\menu\\main.xml"
     }
 ]

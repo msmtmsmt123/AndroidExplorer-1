@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity
         });
         // initialise my views
         // fab menus and buttons
-        /*fam_select=(com.github.clans.fab.FloatingActionMenu) findViewById(R.id.fam_select);
+   /*     fam_select=(com.github.clans.fab.FloatingActionMenu) findViewById(R.id.fam_select);
 
         fab_rename= (com.github.clans.fab.FloatingActionButton) findViewById(R.id.fab_rename);
         fam_select.setClosedOnTouchOutside(true);
@@ -390,22 +390,22 @@ public class MainActivity extends AppCompatActivity
         // 2 - selection, two files
         switch (fabmode) {
             case 0:
-                fam_select.setVisibility(View.GONE);
+                //fam_select.setVisibility(View.GONE);
                 fam_nonselect.setVisibility(View.VISIBLE);
                 break;
             case 1:
-                fam_select.setVisibility(View.VISIBLE);
+                //fam_select.setVisibility(View.VISIBLE);
                 fam_nonselect.setVisibility(View.GONE);
                 break;
             case 2:
-                fam_select.setVisibility(View.VISIBLE);
+               // fam_select.setVisibility(View.VISIBLE);
                 fam_nonselect.setVisibility(View.GONE);
 
-                if (currentAdapter.getCheckedCOunt() > 1) {
+             /*   if (currentAdapter.getCheckedCOunt() > 1) {
                     if (fam_select.getChildCount() == 10) fam_select.removeMenuButton(fab_rename);
                 } else {
                     if (fam_select.getChildCount() != 10) fam_select.addMenuButton(fab_rename, 0);
-                }
+                }*/
 
                 break;
 
