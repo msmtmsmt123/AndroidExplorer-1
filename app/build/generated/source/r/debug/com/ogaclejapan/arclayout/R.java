@@ -8,13 +8,13 @@ package com.ogaclejapan.arclayout;
 
 public final class R {
 	public static final class attr {
-		public static final int arc_angle = 0x7f010178;
-		public static final int arc_axisRadius = 0x7f010175;
-		public static final int arc_color = 0x7f010173;
-		public static final int arc_freeAngle = 0x7f010176;
+		public static final int arc_angle = 0x7f010180;
+		public static final int arc_axisRadius = 0x7f01017d;
+		public static final int arc_color = 0x7f01017b;
+		public static final int arc_freeAngle = 0x7f01017e;
 		public static final int arc_origin = 0x7f010000;
-		public static final int arc_radius = 0x7f010174;
-		public static final int arc_reverseAngle = 0x7f010177;
+		public static final int arc_radius = 0x7f01017c;
+		public static final int arc_reverseAngle = 0x7f01017f;
 	}
 	public static final class id {
 		public static final int bottom = 0x7f0c000c;
@@ -28,8 +28,8 @@ public final class R {
 		public static final int top = 0x7f0c0014;
 	}
 	public static final class styleable {
-		public static final int[] arc_ArcLayout = { 0x7f010000, 0x7f010173, 0x7f010174, 0x7f010175, 0x7f010176, 0x7f010177 };
-		public static final int[] arc_ArcLayout_Layout = { 0x7f010000, 0x7f010178 };
+		public static final int[] arc_ArcLayout = { 0x7f010000, 0x7f01017b, 0x7f01017c, 0x7f01017d, 0x7f01017e, 0x7f01017f };
+		public static final int[] arc_ArcLayout_Layout = { 0x7f010000, 0x7f010180 };
 		public static final int arc_ArcLayout_Layout_arc_angle = 1;
 		public static final int arc_ArcLayout_Layout_arc_origin = 0;
 		public static final int arc_ArcLayout_arc_axisRadius = 3;

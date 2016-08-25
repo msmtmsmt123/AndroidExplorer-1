@@ -295,8 +295,6 @@ class CustomAdapter extends BaseAdapter {
             holder = (Holder) convertView.getTag();
         }
 
-        final View cv = convertView;
-
         // keep check after scroll
         holder.cb.setOnCheckedChangeListener(null);
         holder.cb.setFocusable(false);
@@ -454,7 +452,7 @@ class BitmapWorkerTask extends AsyncTask<File, Void, Bitmap> {
     int height;
 
     public BitmapWorkerTask(LruCache<String, Bitmap> memCache, ImageView imageView, int reqWidth, int reqHeight) {
-        imageViewReference = new WeakReference<ImageView>(imageView);
+        imageViewReference = new WeakReference<>(imageView);
         mMemoryCache = memCache;
         width = reqWidth;
         height = reqHeight;
@@ -578,7 +576,7 @@ class AsyncDrawable extends BitmapDrawable {
                          BitmapWorkerTask bitmapWorkerTask) {
         super(res, bitmap);
         bitmapWorkerTaskReference =
-                new WeakReference<BitmapWorkerTask>(bitmapWorkerTask);
+                new WeakReference<>(bitmapWorkerTask);
     }
 
     public BitmapWorkerTask getBitmapWorkerTask() {

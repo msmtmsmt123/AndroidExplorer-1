@@ -6,11 +6,9 @@ import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.content.pm.PackageManager;
-import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
@@ -72,7 +70,7 @@ public class MainActivity extends AppCompatActivity
             // Fixes statusbar covers toolbar issue
             //toolbar.setPadding(0, getStatusBarHeight(), 0, 0);
         }
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        //DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 //       //  Uncomment to show toggle icon in toolbar.
 //        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
 //                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -267,7 +265,7 @@ public class MainActivity extends AppCompatActivity
 
     public void setPathbar(String xpath) {
 
-        Drawable pathBarArrow = ContextCompat.getDrawable(getApplicationContext(), R.drawable.ic_keyboard_arrow_right_black_24dp);
+        // Drawable pathBarArrow = ContextCompat.getDrawable(getApplicationContext(), R.drawable.ic_keyboard_arrow_right_black_24dp);
         String path = xpath.replace(Environment.getExternalStorageDirectory().toString(), "");
         // dynamically remove views attached to pathbar
         if (pathBarContainer.getChildCount() > 0) {

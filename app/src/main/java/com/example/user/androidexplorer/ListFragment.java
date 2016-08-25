@@ -16,20 +16,18 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 
-/**
- * Created by User on 17/8/2016.
- */
+
 public class ListFragment extends Fragment {
 
     private static final boolean HIDEHIDDENFILES = false;
     private static final boolean SHOWHIDDENFILES = true;
-    private ArrayList<File> fileList = new ArrayList<File>();
-    private ArrayList<File> dirList = new ArrayList<File>();
-    private ArrayList<String> fileDirLlist = new ArrayList<String>();
-    private ArrayList<String> fileSizeList = new ArrayList<String>();
-    private ArrayList<Integer> iconFileDirLlist = new ArrayList<Integer>();
-    private ArrayList<Date> fileModDate = new ArrayList<Date>();
-    private ArrayList<Bitmap> thumbs = new ArrayList<Bitmap>();
+    private ArrayList<File> fileList = new ArrayList<>();
+    private ArrayList<File> dirList = new ArrayList<>();
+    private ArrayList<String> fileDirLlist = new ArrayList<>();
+    private ArrayList<String> fileSizeList = new ArrayList<>();
+    private ArrayList<Integer> iconFileDirLlist = new ArrayList<>();
+    private ArrayList<Date> fileModDate = new ArrayList<>();
+    private ArrayList<Bitmap> thumbs = new ArrayList<>();
     private boolean showHiddenObjects;
     private MyFileList myFiles;
     private MyFileList myDirs;
