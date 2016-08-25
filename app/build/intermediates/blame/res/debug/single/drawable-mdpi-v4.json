@@ -1,0 +1,898 @@
+[
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_textfield_default_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/favorites_white.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-mdpi/favorites_white.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\fab_add.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.github.clans\\fab\\1.6.4\\res\\drawable-mdpi-v4\\fab_add.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_spinner_mtrl_am_alpha.9.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\copy_white.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\copy_white.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\home_dark.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\home_dark.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_star_half_black_36dp.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_tab_indicator_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\cut_white.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\cut_white.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\file_actions_white.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\file_actions_white.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_list_selector_disabled_holo_dark.9.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\add_white.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\add_white.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_scrubber_control_off_mtrl_alpha.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\delete_white.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\delete_white.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_star_black_16dp.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/ic_keyboard_arrow_right_black_24dp.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-mdpi/ic_keyboard_arrow_right_black_24dp.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_list_pressed_holo_light.9.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_000.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\add_folder_white.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\add_folder_white.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_015.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_popup_background_mtrl_mult.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/cut_white.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-mdpi/cut_white.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/copy_white.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-mdpi/copy_white.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/file_actions_white.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-mdpi/file_actions_white.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_star_black_16dp.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_star_black_36dp.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_015.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\cut_white.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\cut_white.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_switch_track_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_textfield_activated_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/home_dark.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-mdpi/home_dark.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_list_focused_holo.9.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_list_divider_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\edit_white.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\edit_white.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_000.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/edit_white.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-mdpi/edit_white.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_star_half_black_36dp.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_list_selector_disabled_holo_light.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\blank.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\blank.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/add_white.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-mdpi/add_white.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\file_actions_white.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\file_actions_white.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_scrubber_control_off_mtrl_alpha.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_star_half_black_16dp.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\home_black.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\home_black.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_star_black_48dp.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_ic_star_black_48dp.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_list_pressed_holo_dark.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_list_longpressed_holo.9.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_star_half_black_16dp.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_list_pressed_holo_dark.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/right_arrow_dark.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-mdpi/right_arrow_dark.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\home_dark.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\home_dark.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\favorites_white.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\favorites_white.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_scrubber_track_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_star_black_36dp.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\add_folder_white.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\add_folder_white.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_000.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_star_black_16dp.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_star_half_black_36dp.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/delete_white.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-mdpi/delete_white.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_star_black_16dp.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_000.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/favorites_white.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-mdpi/favorites_white.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/add_folder_white.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-mdpi/add_folder_white.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_015.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/fab_add.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.github.clans/fab/1.6.4/res/drawable-mdpi-v4/fab_add.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\favorites_white.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\favorites_white.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_list_selector_disabled_holo_dark.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_list_divider_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_list_longpressed_holo.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_popup_background_mtrl_mult.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_list_pressed_holo_dark.9.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/folder.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-mdpi/folder.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_star_half_black_16dp.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\edit_white.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\edit_white.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_textfield_activated_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_keyboard_arrow_right_black_24dp.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_keyboard_arrow_right_black_24dp.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_list_focused_holo.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_list_pressed_holo_light.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/copy_white.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-mdpi/copy_white.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/folder.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-mdpi/folder.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\copy_white.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\copy_white.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\delete_white.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\delete_white.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_star_black_48dp.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_ic_star_black_48dp.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/ic_keyboard_arrow_right_black_24dp.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-mdpi/ic_keyboard_arrow_right_black_24dp.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_star_half_black_48dp.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_ic_star_half_black_48dp.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/edit_white.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-mdpi/edit_white.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_list_focused_holo.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_list_selector_disabled_holo_dark.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\right_arrow_dark.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\right_arrow_dark.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_list_longpressed_holo.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_textfield_default_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/home_dark.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-mdpi/home_dark.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_star_half_black_48dp.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_ic_star_half_black_48dp.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_star_half_black_36dp.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_textfield_default_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_tab_indicator_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/delete_white.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-mdpi/delete_white.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_015.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_list_longpressed_holo.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_switch_track_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_star_black_36dp.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/cut_white.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-mdpi/cut_white.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_menu_share_mtrl_alpha.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_list_divider_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\folder.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\folder.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_cab_background_top_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_star_half_black_16dp.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_list_selector_disabled_holo_dark.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/add_folder_white.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-mdpi/add_folder_white.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\right_arrow_dark.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\right_arrow_dark.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/file_actions_white.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-mdpi/file_actions_white.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_keyboard_arrow_right_black_24dp.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_keyboard_arrow_right_black_24dp.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_spinner_mtrl_am_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/right_arrow_dark.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-mdpi/right_arrow_dark.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_popup_background_mtrl_mult.9.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\fab_add.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.github.clans\\fab\\1.6.4\\res\\drawable-mdpi-v4\\fab_add.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\blank.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\blank.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_list_divider_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_list_focused_holo.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_star_black_48dp.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_ic_star_black_48dp.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_menu_share_mtrl_alpha.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/blank.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-mdpi/blank.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/blank.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-mdpi/blank.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_scrubber_track_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\home_black.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\home_black.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\add_white.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\add_white.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_list_pressed_holo_light.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\folder.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\folder.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_star_half_black_48dp.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_ic_star_half_black_48dp.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_popup_background_mtrl_mult.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/home_black.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-mdpi/home_black.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_star_black_36dp.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_ic_star_half_black_48dp.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_ic_star_half_black_48dp.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_list_selector_disabled_holo_light.9.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_list_pressed_holo_dark.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_cab_background_top_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_textfield_default_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_list_pressed_holo_light.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/home_black.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-mdpi/home_black.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_star_black_48dp.png",
+        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-mdpi-v4/abc_ic_star_black_48dp.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/add_white.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-mdpi/add_white.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/fab_add.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.github.clans/fab/1.6.4/res/drawable-mdpi-v4/fab_add.png"
+    },
+    {
+        "merged": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
+        "source": "/media/ninomarlou/Data/Dropbox/Android Projects/AndroidExplorer/C:\\Users\\User\\Google Drive\\Android Projects\\AndroidExplorer\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable-mdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    }
+]

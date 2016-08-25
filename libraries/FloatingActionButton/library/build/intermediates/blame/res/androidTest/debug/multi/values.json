@@ -1,0 +1,83 @@
+[
+  {
+    "outputFile": "C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\libraries\\FloatingActionButton\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\values\\values.xml",
+    "map": [
+      {
+        "to": {
+          "startLine": 4,
+          "startColumn": 4,
+          "startOffset": 3632,
+          "endColumn": 44,
+          "endOffset": 3672
+        },
+        "from": {
+          "file": "C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\libraries\\FloatingActionButton\\library\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+          "position": {
+            "startLine": 4,
+            "startColumn": 4,
+            "startOffset": 3632,
+            "endColumn": 44,
+            "endOffset": 3672
+          }
+        }
+      },
+      {
+        "to": {
+          "startLine": 5,
+          "startColumn": 4,
+          "startOffset": 3677,
+          "endColumn": 46,
+          "endOffset": 3719
+        },
+        "from": {
+          "file": "C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\libraries\\FloatingActionButton\\library\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+          "position": {
+            "startLine": 5,
+            "startColumn": 4,
+            "startOffset": 3677,
+            "endColumn": 46,
+            "endOffset": 3719
+          }
+        }
+      },
+      {
+        "to": {
+          "startLine": 6,
+          "startColumn": 4,
+          "startOffset": 3724,
+          "endColumn": 47,
+          "endOffset": 3767
+        },
+        "from": {
+          "file": "C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\libraries\\FloatingActionButton\\library\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+          "position": {
+            "startLine": 6,
+            "startColumn": 4,
+            "startOffset": 3724,
+            "endColumn": 47,
+            "endOffset": 3767
+          }
+        }
+      },
+      {
+        "to": {
+          "startLine": 7,
+          "startColumn": 4,
+          "startOffset": 3772,
+          "endColumn": 38,
+          "endOffset": 3806
+        },
+        "from": {
+          "file": "C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\libraries\\FloatingActionButton\\library\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+          "position": {
+            "startLine": 7,
+            "startColumn": 4,
+            "startOffset": 3772,
+            "endColumn": 38,
+            "endOffset": 3806
+          }
+        }
+      }
+    ]
+  }
+]

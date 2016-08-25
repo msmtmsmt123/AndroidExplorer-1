@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@drawable/border_style"
+    android:orientation="horizontal"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imageView1_grid"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/folder" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <CheckBox
+                android:id="@+id/checkBox_grid"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|right"
+                android:layout_weight="2"
+                android:gravity="left|bottom" />
+
+            <LinearLayout
+                android:id="@+id/itemTextHolder_Grid"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="8"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView1_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:ellipsize="middle"
+                    android:fontFamily="@string/abc_font_family_headline_material"
+                    android:fontFeatureSettings="@string/abc_font_family_headline_material"
+                    android:gravity="left|bottom"
+                    android:maxLines="1"
+                    android:textColor="@color/bright_foreground_material_light"
+                    android:textSize="10dp"
+                    android:typeface="sans" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:gravity="left|bottom"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:id="@+id/info1_grid"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:gravity="bottom|start"
+                        android:text="New Text"
+                        android:textSize="8dp"
+                        android:textStyle="italic"
+                        android:typeface="sans" />
+
+                    <TextView
+                        android:id="@+id/info2_grid"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:gravity="bottom|end"
+                        android:text="New Text"
+                        android:textSize="8dp"
+                        android:textStyle="italic"
+                        android:typeface="sans"
+                        android:visibility="visible" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

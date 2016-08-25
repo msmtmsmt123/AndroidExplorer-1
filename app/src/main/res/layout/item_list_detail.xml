@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:weightSum="10">
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:src="@drawable/folder" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:ellipsize="middle"
+            android:fontFamily="@string/abc_font_family_headline_material"
+            android:fontFeatureSettings="@string/abc_font_family_headline_material"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/bright_foreground_material_light"
+            android:typeface="sans" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/info1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="6"
+                android:gravity="left|bottom"
+                android:text="New Text"
+                android:textSize="10dp"
+                android:textStyle="italic"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/info2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_weight="4"
+                android:gravity="start"
+                android:text="New Text"
+                android:textAlignment="gravity"
+                android:textSize="10dp"
+                android:textStyle="italic"
+                android:typeface="sans"
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+[
+  {
+    "merged": "C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\libraries\\FloatingActionButton\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\fab_slide_in_from_right.xml",
+    "source": "C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\libraries\\FloatingActionButton\\library\\build\\intermediates\\bundles\\debug\\res\\anim\\fab_slide_in_from_right.xml"
+  },
+  {
+    "merged": "C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\libraries\\FloatingActionButton\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\fab_slide_in_from_left.xml",
+    "source": "C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\libraries\\FloatingActionButton\\library\\build\\intermediates\\bundles\\debug\\res\\anim\\fab_slide_in_from_left.xml"
+  },
+  {
+    "merged": "C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\libraries\\FloatingActionButton\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\fab_scale_up.xml",
+    "source": "C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\libraries\\FloatingActionButton\\library\\build\\intermediates\\bundles\\debug\\res\\anim\\fab_scale_up.xml"
+  },
+  {
+    "merged": "C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\libraries\\FloatingActionButton\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\fab_slide_out_to_left.xml",
+    "source": "C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\libraries\\FloatingActionButton\\library\\build\\intermediates\\bundles\\debug\\res\\anim\\fab_slide_out_to_left.xml"
+  },
+  {
+    "merged": "C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\libraries\\FloatingActionButton\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\fab_slide_out_to_right.xml",
+    "source": "C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\libraries\\FloatingActionButton\\library\\build\\intermediates\\bundles\\debug\\res\\anim\\fab_slide_out_to_right.xml"
+  },
+  {
+    "merged": "C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\libraries\\FloatingActionButton\\library\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\fab_scale_down.xml",
+    "source": "C:\\Users\\User\\AndroidStudioProjects\\AndroidExplorer\\libraries\\FloatingActionButton\\library\\build\\intermediates\\bundles\\debug\\res\\anim\\fab_scale_down.xml"
+  }
+]
