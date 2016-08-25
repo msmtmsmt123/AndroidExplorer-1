@@ -9,22 +9,29 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
+import android.support.v4.view.ViewCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
+import android.view.animation.AccelerateInterpolator;
+import android.view.animation.Animation;
 import android.view.animation.AnticipateInterpolator;
 import android.view.animation.OvershootInterpolator;
+import android.view.animation.TranslateAnimation;
 import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -52,6 +59,8 @@ public class MainActivity extends AppCompatActivity
     private com.github.clans.fab.FloatingActionMenu fam_nonselect;
     private com.github.clans.fab.FloatingActionButton fab_rename;
     private boolean selectionMode;
+    FloatingActionButton fab;
+    LinearLayout popUpMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,38 +92,31 @@ public class MainActivity extends AppCompatActivity
         // Set default values.
         selectionMode = false;   // use to identify if user is currently selecting files.
         openMenu = false;
-        menuLayout = findViewById(R.id.menu_layout);
-        arcLayout = (ArcLayout) findViewById(R.id.arc_layout);
 
-        fam_nonselect = (com.github.clans.fab.FloatingActionMenu) findViewById(R.id.fam_nonselect);
-        // fam_nonselect.toggle(true);
-        fam_nonselect.setOnMenuButtonClickListener(new com.github.clans.fab.FloatingActionMenu.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (openMenu) {
-                    hideMenu();
-                } else {
-                    showMenu();
-                }
-                openMenu = !openMenu;
-            }
-        });
-        // initialise my views
-        // fab menus and buttons
-   /*     fam_select=(com.github.clans.fab.FloatingActionMenu) findViewById(R.id.fam_select);
-
-        fab_rename= (com.github.clans.fab.FloatingActionButton) findViewById(R.id.fab_rename);
-        fam_select.setClosedOnTouchOutside(true);
-        fam_nonselect.setClosedOnTouchOutside(true);
-*/
-        //  arc_menu=(com.sa90.materialarcmenu.ArcMenu) findViewById(R.id.arcMenu);
-
-
+        fab = (FloatingActionButton) findViewById(R.id.fab);
+        popUpMenu = (LinearLayout) findViewById(R.id.popUpMenu);
         root = new File(Environment.getExternalStorageDirectory().getAbsolutePath());
         pathBarContainer = (LinearLayout) findViewById(R.id.pathbarContainer);
         horizontalScrollView = (HorizontalScrollView) findViewById(R.id.horizontalScrollView);
         fragment = (ListFragment) getFragmentManager()
                 .findFragmentById(R.id.mainFragment);
+
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (openMenu) {
+                    rotateFabBackward();
+                    popUpMenu.startAnimation(outToRightAnimation());
+                    popUpMenu.setVisibility(View.GONE);
+                } else {
+                    rotateFabForward();
+                    popUpMenu.startAnimation(inFromRightAnimation());
+                    popUpMenu.setVisibility(View.VISIBLE);
+                }
+                openMenu = !openMenu;
+            }
+        });
 
         // Check if app has permission to read external storage
         if (canMakeSmores()) {
@@ -140,86 +142,45 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    @SuppressWarnings("NewApi")
-    private void showMenu() {
-        menuLayout.setVisibility(View.VISIBLE);
-        List<Animator> animList = new ArrayList<>();
-
-        for (int i = 0, len = arcLayout.getChildCount(); i < len; i++) {
-            animList.add(createShowItemAnimator(arcLayout.getChildAt(i)));
-        }
-
-        AnimatorSet animSet = new AnimatorSet();
-        animSet.setDuration(400);
-        animSet.setInterpolator(new OvershootInterpolator());
-        animSet.playTogether(animList);
-        animSet.start();
+    public void rotateFabForward() {
+        ViewCompat.animate(fab)
+                .rotation(45.0F)
+                .withLayer()
+                .setDuration(300L)
+                .setInterpolator(new OvershootInterpolator(10.0F))
+                .start();
     }
 
-    @SuppressWarnings("NewApi")
-    private void hideMenu() {
-
-        List<Animator> animList = new ArrayList<>();
-
-        for (int i = arcLayout.getChildCount() - 1; i >= 0; i--) {
-            animList.add(createHideItemAnimator(arcLayout.getChildAt(i)));
-        }
-
-        AnimatorSet animSet = new AnimatorSet();
-        animSet.setDuration(400);
-        animSet.setInterpolator(new AnticipateInterpolator());
-        animSet.playTogether(animList);
-        animSet.addListener(new AnimatorListenerAdapter() {
-            @Override
-            public void onAnimationEnd(Animator animation) {
-                super.onAnimationEnd(animation);
-                menuLayout.setVisibility(View.INVISIBLE);
-            }
-        });
-        animSet.start();
-
+    public void rotateFabBackward() {
+        ViewCompat.animate(fab)
+                .rotation(0.0F)
+                .withLayer()
+                .setDuration(300L)
+                .setInterpolator(new OvershootInterpolator(10.0F))
+                .start();
     }
 
-    private Animator createShowItemAnimator(View item) {
+    private Animation inFromRightAnimation() {
 
-        float dx = fam_nonselect.getX() - item.getX();
-        float dy = fam_nonselect.getY() - item.getY();
-
-        item.setRotation(0f);
-        item.setTranslationX(dx);
-        item.setTranslationY(dy);
-
-        Animator anim = ObjectAnimator.ofPropertyValuesHolder(
-                item,
-                AnimatorUtils.rotation(0f, 720f),
-                AnimatorUtils.translationX(dx, 0f),
-                AnimatorUtils.translationY(dy, 0f)
-        );
-
-        return anim;
+        Animation inFromRight = new TranslateAnimation(
+                Animation.RELATIVE_TO_PARENT, +1.0f,
+                Animation.RELATIVE_TO_PARENT, 0.0f,
+                Animation.RELATIVE_TO_PARENT, 0.0f,
+                Animation.RELATIVE_TO_PARENT, 0.0f);
+        inFromRight.setDuration(300L);
+        inFromRight.setInterpolator(new AccelerateInterpolator());
+        return inFromRight;
     }
 
-    private Animator createHideItemAnimator(final View item) {
-        float dx = fam_nonselect.getX() - item.getX();
-        float dy = fam_nonselect.getY() - item.getY();
-
-        Animator anim = ObjectAnimator.ofPropertyValuesHolder(
-                item,
-                AnimatorUtils.rotation(720f, 0f),
-                AnimatorUtils.translationX(0f, dx),
-                AnimatorUtils.translationY(0f, dy)
-        );
-
-        anim.addListener(new AnimatorListenerAdapter() {
-            @Override
-            public void onAnimationEnd(Animator animation) {
-                super.onAnimationEnd(animation);
-                item.setTranslationX(0f);
-                item.setTranslationY(0f);
-            }
-        });
-
-        return anim;
+    private Animation outToRightAnimation() {
+        Animation outtoRight = new TranslateAnimation(
+                Animation.RELATIVE_TO_PARENT, 0.0f,
+                Animation.RELATIVE_TO_PARENT, +1.0f,
+                Animation.RELATIVE_TO_PARENT, 0.0f,
+                Animation.RELATIVE_TO_PARENT, 0.0f);
+        outtoRight.setDuration(300L);
+        outtoRight.setInterpolator(new AccelerateInterpolator());
+        return outtoRight;
     }
 
     private boolean canMakeSmores() {
