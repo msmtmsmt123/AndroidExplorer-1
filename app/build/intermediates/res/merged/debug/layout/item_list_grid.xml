@@ -2,89 +2,89 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="160dp"
-    android:orientation="horizontal"
     android:background="@drawable/border_style"
+    android:orientation="horizontal"
     android:weightSum="10">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         android:padding="5dp">
 
         <ImageView
             android:id="@+id/imageView1_grid"
             android:layout_width="match_parent"
             android:layout_height="130dp"
-            android:src="@drawable/folder"
-            android:paddingTop="5dp" />
+            android:paddingTop="5dp"
+            android:src="@drawable/folder" />
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:weightSum="10"
             android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp">
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
 
             <CheckBox
+                android:id="@+id/checkBox_grid"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:id="@+id/checkBox_grid"
                 android:layout_gravity="bottom|right"
                 android:layout_weight="2"
                 android:gravity="left|bottom" />
 
             <LinearLayout
-                android:orientation="vertical"
+                android:id="@+id/itemTextHolder_Grid"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="left"
                 android:layout_weight="8"
-                android:id="@+id/itemTextHolder_Grid">
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView1_grid"
                     android:layout_width="match_parent"
                     android:layout_height="20dp"
                     android:ellipsize="middle"
-                    android:maxLines="1"
                     android:fontFamily="@string/abc_font_family_headline_material"
                     android:fontFeatureSettings="@string/abc_font_family_headline_material"
-                    android:typeface="sans"
+                    android:gravity="left|bottom"
+                    android:maxLines="1"
                     android:textColor="@color/bright_foreground_material_light"
                     android:textSize="10dp"
-                    android:gravity="left|bottom" />
+                    android:typeface="sans" />
 
                 <LinearLayout
-                    android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="10dp"
-                    android:weightSum="10"
-                    android:gravity="left|bottom">
+                    android:gravity="left|bottom"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
 
                     <TextView
+                        android:id="@+id/info1_grid"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="New Text"
-                        android:id="@+id/info1_grid"
                         android:layout_weight="5"
                         android:gravity="bottom|start"
+                        android:text="New Text"
+                        android:textSize="8dp"
                         android:textStyle="italic"
-                        android:typeface="sans"
-                        android:textSize="8dp" />
+                        android:typeface="sans" />
 
                     <TextView
+                        android:id="@+id/info2_grid"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="New Text"
-                        android:id="@+id/info2_grid"
                         android:layout_weight="5"
                         android:gravity="bottom|end"
-                        android:visibility="visible"
-                        android:typeface="sans"
+                        android:text="New Text"
+                        android:textSize="8dp"
                         android:textStyle="italic"
-                        android:textSize="8dp" />
+                        android:typeface="sans"
+                        android:visibility="visible" />
 
 
                 </LinearLayout>
