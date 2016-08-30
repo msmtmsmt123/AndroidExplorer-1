@@ -1,10 +1,6 @@
 package com.example.user.androidexplorer;
 
 import android.Manifest;
-import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
-import android.animation.AnimatorSet;
-import android.animation.ObjectAnimator;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -23,25 +19,21 @@ import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.Animation;
-import android.view.animation.AnticipateInterpolator;
 import android.view.animation.OvershootInterpolator;
 import android.view.animation.TranslateAnimation;
-import android.widget.FrameLayout;
 import android.widget.HorizontalScrollView;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.ogaclejapan.arclayout.ArcLayout;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
 
 
 public class MainActivity extends AppCompatActivity
@@ -56,12 +48,16 @@ public class MainActivity extends AppCompatActivity
     private LinearLayout pathBarContainer;
     private HorizontalScrollView horizontalScrollView;
     private CustomAdapter currentAdapter;
-    private com.github.clans.fab.FloatingActionMenu fam_select;
-    private com.github.clans.fab.FloatingActionMenu fam_nonselect;
-    private com.github.clans.fab.FloatingActionButton fab_rename;
     private boolean selectionMode;
     FloatingActionButton fab;
     LinearLayout popUpMenu;
+    ImageButton addFileBtn;
+    ImageButton addFolderBtn;
+    ImageButton addFavoriteBtn;
+    ImageButton deleteItemBtn;
+    ImageButton copyBtn;
+    ImageButton cutBtn;
+    ImageButton renameBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,8 +69,8 @@ public class MainActivity extends AppCompatActivity
         if (Build.VERSION.SDK_INT >= 21) {
 
             // Set the status bar to dark-semi-transparentish
-            getWindow().setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS,
-                    WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            /*getWindow().setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS,
+                    WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);*/
 
             // Set paddingTop of toolbar to height of status bar.
             // Fixes statusbar covers toolbar issue
@@ -93,10 +89,18 @@ public class MainActivity extends AppCompatActivity
         // Set default values.
         selectionMode = false;   // use to identify if user is currently selecting files.
         openMenu = false;
+        root = new File(Environment.getExternalStorageDirectory().getAbsolutePath());
 
         fab = (FloatingActionButton) findViewById(R.id.fab);
-        popUpMenu = (LinearLayout) findViewById(R.id.popUpMenu);
-        root = new File(Environment.getExternalStorageDirectory().getAbsolutePath());
+        popUpMenu = (LinearLayout) findViewById(R.id.popUpMenuNoSelect);
+        addFileBtn=(ImageButton) findViewById(R.id.newfilebutton);
+        addFolderBtn=(ImageButton) findViewById(R.id.newfolderbutton);
+        addFavoriteBtn=(ImageButton) findViewById(R.id.addfavbutton);
+        deleteItemBtn=(ImageButton) findViewById(R.id.deletebutton);
+        copyBtn=(ImageButton) findViewById(R.id.copybutton);
+        cutBtn=(ImageButton) findViewById(R.id.cutbutton);
+        renameBtn=(ImageButton) findViewById(R.id.renamebutton);
+
         pathBarContainer = (LinearLayout) findViewById(R.id.pathbarContainer);
         horizontalScrollView = (HorizontalScrollView) findViewById(R.id.horizontalScrollView);
         fragment = (ListFragment) getFragmentManager()
@@ -108,11 +112,11 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View view) {
                 if (openMenu) {
                     rotateFabBackward();
-                    popUpMenu.startAnimation(outToRightAnimation());
+                    popUpMenu.startAnimation(outToLeftAnimation());
                     popUpMenu.setVisibility(View.GONE);
                 } else {
                     rotateFabForward();
-                    popUpMenu.startAnimation(inFromRightAnimation());
+                    popUpMenu.startAnimation(inFromLeftAnimation());
                     popUpMenu.setVisibility(View.VISIBLE);
                 }
                 openMenu = !openMenu;
@@ -161,27 +165,27 @@ public class MainActivity extends AppCompatActivity
                 .start();
     }
 
-    private Animation inFromRightAnimation() {
 
-        Animation inFromRight = new TranslateAnimation(
-                Animation.RELATIVE_TO_PARENT, +1.0f,
+    private Animation inFromLeftAnimation() {
+        Animation inFromLeft = new TranslateAnimation(
+                Animation.RELATIVE_TO_PARENT, -1.0f,
                 Animation.RELATIVE_TO_PARENT, 0.0f,
                 Animation.RELATIVE_TO_PARENT, 0.0f,
                 Animation.RELATIVE_TO_PARENT, 0.0f);
-        inFromRight.setDuration(300L);
-        inFromRight.setInterpolator(new AccelerateInterpolator());
-        return inFromRight;
+        inFromLeft.setDuration(200L);
+        inFromLeft.setInterpolator(new AccelerateInterpolator());
+        return inFromLeft;
     }
 
-    private Animation outToRightAnimation() {
-        Animation outtoRight = new TranslateAnimation(
+    private Animation outToLeftAnimation() {
+        Animation outtoLeft = new TranslateAnimation(
                 Animation.RELATIVE_TO_PARENT, 0.0f,
-                Animation.RELATIVE_TO_PARENT, +1.0f,
+                Animation.RELATIVE_TO_PARENT, -1.0f,
                 Animation.RELATIVE_TO_PARENT, 0.0f,
                 Animation.RELATIVE_TO_PARENT, 0.0f);
-        outtoRight.setDuration(300L);
-        outtoRight.setInterpolator(new AccelerateInterpolator());
-        return outtoRight;
+        outtoLeft.setDuration(200L);
+        outtoLeft.setInterpolator(new AccelerateInterpolator());
+        return outtoLeft;
     }
 
     private boolean canMakeSmores() {
@@ -195,6 +199,12 @@ public class MainActivity extends AppCompatActivity
         if (position != null) currentAdapter.selectSpecificItem(position);
         currentAdapter.hideCheckboxes(false);
         updateFab(1);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            fab.setImageDrawable(getResources().getDrawable(R.drawable.edit_fab_icon, this.getTheme()));
+        } else {
+            fab.setImageDrawable(ContextCompat.getDrawable(this,R.drawable.edit_fab_icon));
+        }
+        rotateFabForward();
         selectionMode = true;
 
     }
@@ -221,7 +231,7 @@ public class MainActivity extends AppCompatActivity
     public void updateWholeScreen(File file) {
         fragment.populateScreen(file);
         currentAdapter = fragment.getMyAdapter();
-        //setPathbar(file.toString());
+        updateFab(0);
     }
 
 
@@ -234,7 +244,7 @@ public class MainActivity extends AppCompatActivity
             pathBarContainer.removeAllViews();
         }
         final TextView homeTextView = new TextView(this);
-        homeTextView.setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.home_dark, 0, 0, 0);
+        homeTextView.setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.right_arrow_dark, 0, 0, 0);
         homeTextView.setGravity(Gravity.CENTER_VERTICAL);
         homeTextView.setCompoundDrawablePadding(20);
         homeTextView.setText("Internal Storage");
@@ -350,16 +360,31 @@ public class MainActivity extends AppCompatActivity
         // 2 - selection, two files
         switch (fabmode) {
             case 0:
-                //fam_select.setVisibility(View.GONE);
-                fam_nonselect.setVisibility(View.VISIBLE);
+                addFileBtn.setVisibility(View.VISIBLE);
+                addFolderBtn.setVisibility(View.VISIBLE);
+                addFavoriteBtn.setVisibility(View.VISIBLE);
+                deleteItemBtn.setVisibility(View.GONE);
+                copyBtn.setVisibility(View.GONE);
+                cutBtn.setVisibility(View.GONE);
+                renameBtn.setVisibility(View.GONE);
                 break;
             case 1:
-                //fam_select.setVisibility(View.VISIBLE);
-                fam_nonselect.setVisibility(View.GONE);
+                addFileBtn.setVisibility(View.GONE);
+                addFolderBtn.setVisibility(View.GONE);
+                addFavoriteBtn.setVisibility(View.GONE);
+                deleteItemBtn.setVisibility(View.VISIBLE);
+                copyBtn.setVisibility(View.VISIBLE);
+                cutBtn.setVisibility(View.VISIBLE);
+                renameBtn.setVisibility(View.VISIBLE);
                 break;
             case 2:
-               // fam_select.setVisibility(View.VISIBLE);
-                fam_nonselect.setVisibility(View.GONE);
+                addFileBtn.setVisibility(View.GONE);
+                addFolderBtn.setVisibility(View.GONE);
+                addFavoriteBtn.setVisibility(View.GONE);
+                deleteItemBtn.setVisibility(View.VISIBLE);
+                copyBtn.setVisibility(View.VISIBLE);
+                cutBtn.setVisibility(View.VISIBLE);
+                renameBtn.setVisibility(View.GONE);
 
              /*   if (currentAdapter.getCheckedCOunt() > 1) {
                     if (fam_select.getChildCount() == 10) fam_select.removeMenuButton(fab_rename);

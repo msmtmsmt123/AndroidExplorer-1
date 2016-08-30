@@ -20,14 +20,82 @@
     </fragment>
 
     <LinearLayout
-        android:id="@+id/popUpMenu"
+        android:id="@+id/popUpMenuNoSelect"
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
+        android:layout_height="@dimen/fab_normal"
         android:background="@drawable/pop_up_menu"
         android:layout_gravity="bottom"
-        android:layout_marginLeft="10dp"
-        android:visibility="invisible"></LinearLayout>
+
+        android:clickable="true"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/pop_menu_margin"
+        android:visibility="invisible">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/newfolderbutton"
+            android:background="@drawable/new_folder"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/newfilebutton"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/new_file"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addfavbutton"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/favorite"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/deletebutton"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/delete"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/copybutton"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/copy"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cutbutton"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/cut"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/renamebutton"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/edit"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin" />
+
+    </LinearLayout>
 
 
 </FrameLayout>

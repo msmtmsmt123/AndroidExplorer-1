@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#748C2A</color>
-    <color name="colorPrimaryAlternate">#EAECEE</color>
-    <color name="colorPrimaryDark">#A4C639</color>
-    <color name="colorAccent">#748C2A</color>
+    <color name="colorPrimary">#748089</color>
+    <color name="colorPrimaryAlternate">#42000000</color>
+    <color name="colorPrimaryDark">#748089</color>
+    <color name="colorAccent">#748089</color>
     <color name="displayAreaColor">#f2f2f2</color>
     <color name="pathBarTextNonFocus">#A9A9A9</color>
     <color name="pathBarTextFocus">#000000</color>

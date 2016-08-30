@@ -1,58 +1,106 @@
 [
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/home_black.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/home_black.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/add_white.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/add_white.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/add_folder_white.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/add_folder_white.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/folder.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/folder.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/home_dark.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/home_dark.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/new_folder.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/new_folder.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/delete_white.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/delete_white.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/cut.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/cut.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/copy_white.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/copy_white.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/right_arrow_dark.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/right_arrow_dark.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/file_actions_white.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/file_actions_white.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/new_folder_light.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/new_folder_light.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/blank.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/blank.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_done_all_black_24dp.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_done_all_black_24dp.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/favorites_white.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/favorites_white.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/home_dark.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/home_dark.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/add_white.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/add_white.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/cut_white.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/cut_white.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/cut_white.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/cut_white.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/edit_fab_icon.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/edit_fab_icon.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_keyboard_arrow_right_black_24dp.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_keyboard_arrow_right_black_24dp.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/home_black.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/home_black.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/folder.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/folder.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/new_file_dark.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/new_file_dark.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/right_arrow_dark.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/right_arrow_dark.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/favorite.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/favorite.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/edit_white.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/edit_white.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/copy.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/copy.xml"
+    },
+    {
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/delete.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/delete.xml"
+    },
+    {
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/edit.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/edit.xml"
+    },
+    {
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/ic_keyboard_arrow_right_black_24dp.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_keyboard_arrow_right_black_24dp.xml"
+    },
+    {
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/new_file_light.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/new_file_light.xml"
+    },
+    {
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/new_file.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/new_file.xml"
+    },
+    {
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/copy_white.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/copy_white.xml"
+    },
+    {
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/delete_white.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/delete_white.xml"
+    },
+    {
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/home.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/home.xml"
+    },
+    {
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/favorites.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/favorites.xml"
+    },
+    {
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/blank.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/blank.xml"
+    },
+    {
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/file_actions_white.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/file_actions_white.xml"
+    },
+    {
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/edit_white.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/edit_white.xml"
     }
 ]

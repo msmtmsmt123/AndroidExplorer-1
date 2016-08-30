@@ -1,118 +1,118 @@
 [
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/design_fab_in.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/design/24.2.0/res/anim/design_fab_in.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/fab_slide_in_from_left.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.github.clans/fab/1.6.4/res/anim/fab_slide_in_from_left.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/jump_from_down.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/src/main/res/anim/jump_from_down.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/fab_slide_out_to_left.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.github.clans/fab/1.6.4/res/anim/fab_slide_out_to_left.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/hide_to_bottom.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/src/main/res/anim/hide_to_bottom.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/design_fab_in.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/design/24.2.0/res/anim/design_fab_in.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/anim/abc_popup_enter.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/anim/abc_popup_enter.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/jump_to_down.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/src/main/res/anim/jump_to_down.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/show_from_bottom.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/res/anim/show_from_bottom.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/scale_up.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/src/main/res/anim/scale_up.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/anim/abc_fade_in.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/anim/abc_slide_in_bottom.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/jump_from_down.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/res/anim/jump_from_down.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/fab_slide_in_from_right.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.github.clans/fab/1.6.4/res/anim/fab_slide_in_from_right.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_in.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/design/24.2.0/res/anim/design_bottom_sheet_slide_in.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_in.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/design/24.2.0/res/anim/design_bottom_sheet_slide_in.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/scale_up.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/res/anim/scale_up.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/design_snackbar_in.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/design/24.2.0/res/anim/design_snackbar_in.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/design_fab_out.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/design/24.2.0/res/anim/design_fab_out.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/design_snackbar_out.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/design/24.2.0/res/anim/design_snackbar_out.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/anim/abc_slide_in_top.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/fab_slide_out_to_left.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.github.clans/fab/1.6.4/res/anim/fab_slide_out_to_left.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_out.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/design/24.2.0/res/anim/design_bottom_sheet_slide_out.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/anim/abc_shrink_fade_out_from_bottom.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/fab_slide_in_from_right.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.github.clans/fab/1.6.4/res/anim/fab_slide_in_from_right.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/fab_scale_up.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.github.clans/fab/1.6.4/res/anim/fab_scale_up.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/jump_to_down.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/res/anim/jump_to_down.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_out.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/design/24.2.0/res/anim/design_bottom_sheet_slide_out.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/anim/abc_shrink_fade_out_from_bottom.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/fab_slide_out_to_right.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.github.clans/fab/1.6.4/res/anim/fab_slide_out_to_right.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/fab_scale_down.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.github.clans/fab/1.6.4/res/anim/fab_scale_down.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/anim/abc_fade_out.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/design_snackbar_in.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/design/24.2.0/res/anim/design_snackbar_in.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/anim/abc_slide_out_bottom.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/anim/abc_fade_out.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/design_fab_out.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/design/24.2.0/res/anim/design_fab_out.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/design_snackbar_out.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/design/24.2.0/res/anim/design_snackbar_out.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/fab_scale_down.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.github.clans/fab/1.6.4/res/anim/fab_scale_down.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/rotate_around_center_point.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/res/anim/rotate_around_center_point.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/rotate_around_center_point.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/src/main/res/anim/rotate_around_center_point.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/hide_to_bottom.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/res/anim/hide_to_bottom.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/anim/abc_slide_out_top.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/anim/abc_slide_out_bottom.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/anim/abc_grow_fade_in_from_bottom.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/anim/abc_slide_in_bottom.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/show_from_bottom.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/src/main/res/anim/show_from_bottom.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/fab_scale_up.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.github.clans/fab/1.6.4/res/anim/fab_scale_up.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/anim/abc_fade_in.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/anim/abc_slide_out_top.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/scale_down.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/src/main/res/anim/scale_down.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/scale_down.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/res/anim/scale_down.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/anim/abc_slide_in_top.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/anim/abc_popup_exit.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/fab_slide_in_from_left.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.github.clans/fab/1.6.4/res/anim/fab_slide_in_from_left.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/fab_slide_out_to_right.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.github.clans/fab/1.6.4/res/anim/fab_slide_out_to_right.xml"
     },
     {
-        "merged": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
-        "source": "/media/ninomarlou/Data/AndroidStudio/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/anim/abc_popup_exit.xml"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/anim/abc_grow_fade_in_from_bottom.xml"
     }
 ]
