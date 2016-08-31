@@ -173,7 +173,7 @@ public class MainActivity extends AppCompatActivity
                         }
                         allItemsSelected=!allItemsSelected;
                     }
-                }, 1);
+                }, 100);
 
 
             }
