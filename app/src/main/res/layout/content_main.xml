@@ -30,7 +30,7 @@
         android:clickable="true"
         android:layout_marginBottom="@dimen/fab_margin"
         android:layout_marginRight="@dimen/pop_menu_margin"
-        android:visibility="invisible">
+        android:visibility="gone">
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -58,6 +58,8 @@
             android:background="@drawable/favorite"
             android:layout_marginLeft="@dimen/fab_margin"
             android:layout_marginRight="@dimen/fab_margin" />
+
+
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -94,6 +96,16 @@
             android:background="@drawable/edit"
             android:layout_marginLeft="@dimen/fab_margin"
             android:layout_marginRight="@dimen/fab_margin" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/selectallbutton"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/select_all"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:clickable="false" />
 
     </LinearLayout>
 

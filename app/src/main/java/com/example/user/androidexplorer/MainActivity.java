@@ -5,6 +5,7 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
@@ -24,6 +25,7 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.view.animation.OvershootInterpolator;
 import android.view.animation.TranslateAnimation;
 import android.widget.HorizontalScrollView;
@@ -58,6 +60,8 @@ public class MainActivity extends AppCompatActivity
     ImageButton copyBtn;
     ImageButton cutBtn;
     ImageButton renameBtn;
+    ImageButton selectAllBtn;
+    boolean allItemsSelected;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,6 +94,7 @@ public class MainActivity extends AppCompatActivity
         selectionMode = false;   // use to identify if user is currently selecting files.
         openMenu = false;
         root = new File(Environment.getExternalStorageDirectory().getAbsolutePath());
+        allItemsSelected=false;
 
         fab = (FloatingActionButton) findViewById(R.id.fab);
         popUpMenu = (LinearLayout) findViewById(R.id.popUpMenuNoSelect);
@@ -100,6 +105,79 @@ public class MainActivity extends AppCompatActivity
         copyBtn=(ImageButton) findViewById(R.id.copybutton);
         cutBtn=(ImageButton) findViewById(R.id.cutbutton);
         renameBtn=(ImageButton) findViewById(R.id.renamebutton);
+        selectAllBtn=(ImageButton) findViewById(R.id.selectallbutton);
+
+        addFileBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                view.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.image_click));
+            }
+        });
+
+        addFolderBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                view.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.image_click));
+            }
+        });
+
+        addFavoriteBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                view.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.image_click));
+            }
+        });
+
+        deleteItemBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                view.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.image_click));
+            }
+        });
+
+        copyBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                view.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.image_click));
+            }
+        });
+
+        cutBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                view.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.image_click));
+            }
+        });
+
+        renameBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                view.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.image_click));
+            }
+        });
+
+
+        selectAllBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                view.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.image_click));
+                final Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        // Do something after 5s = 5000ms
+                        if (allItemsSelected) {
+                            currentAdapter.removeSelection();
+                        } else {
+                            currentAdapter.selectAll();
+                        }
+                        allItemsSelected=!allItemsSelected;
+                    }
+                }, 1);
+
+
+            }
+        });
 
         pathBarContainer = (LinearLayout) findViewById(R.id.pathbarContainer);
         horizontalScrollView = (HorizontalScrollView) findViewById(R.id.horizontalScrollView);
@@ -110,16 +188,7 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (openMenu) {
-                    rotateFabBackward();
-                    popUpMenu.startAnimation(outToLeftAnimation());
-                    popUpMenu.setVisibility(View.GONE);
-                } else {
-                    rotateFabForward();
-                    popUpMenu.startAnimation(inFromLeftAnimation());
-                    popUpMenu.setVisibility(View.VISIBLE);
-                }
-                openMenu = !openMenu;
+                toggleMenu();
             }
         });
 
@@ -147,6 +216,29 @@ public class MainActivity extends AppCompatActivity
 
     }
 
+    public void toggleMenu() {
+
+        if (openMenu) {
+            if (selectionMode) {
+                rotateFabFullBackward();
+            } else {
+                rotateFabBackward();
+            }
+            popUpMenu.startAnimation(outToLeftAnimation());
+            popUpMenu.setVisibility(View.GONE);
+        } else {
+            if (selectionMode) {
+                rotateFabFullForward();
+            } else {
+                rotateFabForward();
+            }
+            popUpMenu.startAnimation(inFromLeftAnimation());
+            popUpMenu.setVisibility(View.VISIBLE);
+        }
+
+        openMenu = !openMenu;
+    }
+
     public void rotateFabForward() {
         ViewCompat.animate(fab)
                 .rotation(45.0F)
@@ -157,6 +249,24 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void rotateFabBackward() {
+        ViewCompat.animate(fab)
+                .rotation(0.0F)
+                .withLayer()
+                .setDuration(300L)
+                .setInterpolator(new OvershootInterpolator(10.0F))
+                .start();
+    }
+
+    public void rotateFabFullForward() {
+        ViewCompat.animate(fab)
+                .rotation(-90.0F)
+                .withLayer()
+                .setDuration(300L)
+                .setInterpolator(new OvershootInterpolator(10.0F))
+                .start();
+    }
+
+    public void rotateFabFullBackward() {
         ViewCompat.animate(fab)
                 .rotation(0.0F)
                 .withLayer()
@@ -197,15 +307,78 @@ public class MainActivity extends AppCompatActivity
     public void setSelectionMode(Integer position) {
 
         if (position != null) currentAdapter.selectSpecificItem(position);
-        currentAdapter.hideCheckboxes(false);
-        updateFab(1);
+        currentAdapter.hideCheckboxes(selectionMode);
+        if (openMenu) rotateFabFullForward();
+        selectionMode = !selectionMode;
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            fab.setImageDrawable(getResources().getDrawable(R.drawable.edit_fab_icon, this.getTheme()));
+            if (selectionMode) {
+                updateFab(1);
+                fab.setImageDrawable(getResources().getDrawable(R.drawable.edit_fab, this.getTheme()));
+            } else {
+                updateFab(0);
+                fab.setImageDrawable(getResources().getDrawable(R.drawable.add_white, this.getTheme()));
+            }
+
         } else {
-            fab.setImageDrawable(ContextCompat.getDrawable(this,R.drawable.edit_fab_icon));
+
+            if (selectionMode) {
+                updateFab(1);
+                fab.setImageDrawable(ContextCompat.getDrawable(this,R.drawable.edit_fab));
+            } else {
+                updateFab(0);
+                fab.setImageDrawable(ContextCompat.getDrawable(this,R.drawable.add_white));
+            }
         }
-        rotateFabForward();
-        selectionMode = true;
+
+    }
+
+
+    public void updateFab(int fabmode) {
+        // 0 - no selection
+        // 1 - selection, one file
+        // 2 - selection, two files
+        switch (fabmode) {
+            case 0:
+                addFileBtn.setVisibility(View.VISIBLE);
+                addFolderBtn.setVisibility(View.VISIBLE);
+                addFavoriteBtn.setVisibility(View.VISIBLE);
+                selectAllBtn.setVisibility(View.GONE);
+                deleteItemBtn.setVisibility(View.GONE);
+                copyBtn.setVisibility(View.GONE);
+                cutBtn.setVisibility(View.GONE);
+                renameBtn.setVisibility(View.GONE);
+                break;
+            case 1:
+
+                addFileBtn.setVisibility(View.GONE);
+                addFolderBtn.setVisibility(View.GONE);
+                addFavoriteBtn.setVisibility(View.GONE);
+                selectAllBtn.setVisibility(View.VISIBLE);
+                deleteItemBtn.setVisibility(View.VISIBLE);
+                copyBtn.setVisibility(View.VISIBLE);
+                cutBtn.setVisibility(View.VISIBLE);
+                renameBtn.setVisibility(View.VISIBLE);
+                break;
+            case 2:
+                addFileBtn.setVisibility(View.GONE);
+                addFolderBtn.setVisibility(View.GONE);
+                addFavoriteBtn.setVisibility(View.GONE);
+                selectAllBtn.setVisibility(View.VISIBLE);
+                deleteItemBtn.setVisibility(View.VISIBLE);
+                copyBtn.setVisibility(View.VISIBLE);
+                cutBtn.setVisibility(View.VISIBLE);
+                renameBtn.setVisibility(View.GONE);
+
+             /*   if (currentAdapter.getCheckedCOunt() > 1) {
+                    if (fam_select.getChildCount() == 10) fam_select.removeMenuButton(fab_rename);
+                } else {
+                    if (fam_select.getChildCount() != 10) fam_select.addMenuButton(fab_rename, 0);
+                }*/
+
+                break;
+
+        }
 
     }
 
@@ -342,60 +515,20 @@ public class MainActivity extends AppCompatActivity
         } else {
 
             if (selectionMode) {
-                currentAdapter.hideCheckboxes(true);
-                updateFab(0);
+               // currentAdapter.hideCheckboxes(true);
+                if (openMenu) toggleMenu();
+                setSelectionMode(null);
             } else {
-                if (fragment.getCurrDir().equals(Environment.getExternalStorageDirectory())) {
-                    super.onBackPressed();
-                } else {
-                    fragment.goUpFolder();
+
+                    if (fragment.getCurrDir().equals(Environment.getExternalStorageDirectory())) {
+                        super.onBackPressed();
+                    } else {
+                        fragment.goUpFolder();
+                    }
                 }
-            }
         }
     }
 
-    public void updateFab(int fabmode) {
-        // 0 - no selection
-        // 1 - selection, one file
-        // 2 - selection, two files
-        switch (fabmode) {
-            case 0:
-                addFileBtn.setVisibility(View.VISIBLE);
-                addFolderBtn.setVisibility(View.VISIBLE);
-                addFavoriteBtn.setVisibility(View.VISIBLE);
-                deleteItemBtn.setVisibility(View.GONE);
-                copyBtn.setVisibility(View.GONE);
-                cutBtn.setVisibility(View.GONE);
-                renameBtn.setVisibility(View.GONE);
-                break;
-            case 1:
-                addFileBtn.setVisibility(View.GONE);
-                addFolderBtn.setVisibility(View.GONE);
-                addFavoriteBtn.setVisibility(View.GONE);
-                deleteItemBtn.setVisibility(View.VISIBLE);
-                copyBtn.setVisibility(View.VISIBLE);
-                cutBtn.setVisibility(View.VISIBLE);
-                renameBtn.setVisibility(View.VISIBLE);
-                break;
-            case 2:
-                addFileBtn.setVisibility(View.GONE);
-                addFolderBtn.setVisibility(View.GONE);
-                addFavoriteBtn.setVisibility(View.GONE);
-                deleteItemBtn.setVisibility(View.VISIBLE);
-                copyBtn.setVisibility(View.VISIBLE);
-                cutBtn.setVisibility(View.VISIBLE);
-                renameBtn.setVisibility(View.GONE);
-
-             /*   if (currentAdapter.getCheckedCOunt() > 1) {
-                    if (fam_select.getChildCount() == 10) fam_select.removeMenuButton(fab_rename);
-                } else {
-                    if (fam_select.getChildCount() != 10) fam_select.addMenuButton(fab_rename, 0);
-                }*/
-
-                break;
-
-        }
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

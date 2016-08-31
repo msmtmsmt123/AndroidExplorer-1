@@ -4,67 +4,62 @@
     api-level="23"
     density="xxhdpi"
     format="7"
-    timestamp="10327194893068"
+    timestamp="10385515648608"
     token="8731846693003273382"
-    verifier="COMPATIBLE" >
+    verifier="R_CLASS_CHANGE" >
 
     <task
         name="javac"
-        duration="103" />
+        duration="108" />
     <task
         name="instant-run-dex"
-        duration="350" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="7" />
+        duration="19" />
     <task
         name="verifier"
-        duration="1" />
+        duration="2" />
 
     <artifact
-        location="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/reload-dex/debug/classes.dex"
-        type="RELOAD_DEX" />
+        location="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/resources-debug.ap_"
+        type="RESOURCES" />
+    <artifact
+        location="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
+        type="DEX" />
+    <artifact
+        location="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
+        type="DEX" />
+    <artifact
+        location="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
+        type="DEX" />
+    <artifact
+        location="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
+        type="DEX" />
 
-    <build timestamp="4471138239874" >
+    <build timestamp="2052579225078" >
         <artifact
             location="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="10007705452429"
+        timestamp="10385515648608"
         verifier="R_CLASS_CHANGE" >
         <artifact
             location="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/resources-debug.ap_"
             type="RESOURCES" />
         <artifact
-            location="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
+            location="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
             type="DEX" />
         <artifact
             location="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
             type="DEX" />
         <artifact
-            location="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
+            location="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
             type="DEX" />
         <artifact
             location="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
             type="DEX" />
-    </build>
-    <build
-        timestamp="10304536650337"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/builds/debug/10304536650337/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="10327194893068"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/reload-dex/debug/classes.dex"
-            type="RELOAD_DEX" />
     </build>
 
 </instant-run>
