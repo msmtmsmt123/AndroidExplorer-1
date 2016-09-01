@@ -4,12 +4,12 @@
         "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/add_white.xml"
     },
     {
-        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/folder.xml",
-        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/folder.xml"
-    },
-    {
         "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/new_folder.xml",
         "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/new_folder.xml"
+    },
+    {
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/folder.xml",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-anydpi-v21/folder.xml"
     },
     {
         "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/cut.xml",

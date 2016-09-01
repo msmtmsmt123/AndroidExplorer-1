@@ -8,40 +8,40 @@
         "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/drawable-hdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/edit_white.png",
-        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-hdpi/edit_white.png"
-    },
-    {
         "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_scrubber_track_mtrl_alpha.9.png",
         "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/drawable-hdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png",
-        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/edit_white.png",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-hdpi/edit_white.png"
     },
     {
         "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_keyboard_arrow_right_black_24dp.png",
         "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-hdpi/ic_keyboard_arrow_right_black_24dp.png"
     },
     {
-        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png",
-        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png"
     },
     {
-        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_star_half_black_16dp.png",
-        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/drawable-hdpi-v4/abc_ic_star_half_black_16dp.png"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
         "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_textfield_activated_mtrl_alpha.9.png",
         "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/drawable-hdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/file_actions_white.png",
-        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-hdpi/file_actions_white.png"
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_star_half_black_16dp.png",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/drawable-hdpi-v4/abc_ic_star_half_black_16dp.png"
     },
     {
         "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png",
         "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/drawable-hdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/file_actions_white.png",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-hdpi/file_actions_white.png"
     },
     {
         "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/folder.png",
@@ -244,12 +244,12 @@
         "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
-        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/copy_white.png",
-        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-hdpi/copy_white.png"
-    },
-    {
         "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/select_all.png",
         "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-hdpi/select_all.png"
+    },
+    {
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/copy_white.png",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-hdpi/copy_white.png"
     },
     {
         "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png",

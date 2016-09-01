@@ -16,4 +16,14 @@
     <string name="fab_rename">Rename</string>
     <string name="fab_delete">Delete</string>
     <string name="fab_copy">Copy</string>
+
+    <string name="delete_dialog_title">Are you sure you want to delete the following?</string>
+    <string name="sort_dialog_title">Quick sort options</string>
+    <string name="positive_response_button">Yes</string>
+    <string name="negative_response_button">No</string>
+    <string name="continue_response_button">Continue</string>
+    <string name="cancel_response_button">Cancel</string>
+
+    <string name="add_new_folder_title">Please enter the name of the new folder.</string>
+
 </resources>

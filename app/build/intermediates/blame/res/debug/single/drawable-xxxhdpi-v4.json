@@ -56,12 +56,12 @@
         "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-xxxhdpi/folder.png"
     },
     {
-        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_015.png",
-        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_015.png"
-    },
-    {
         "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_star_black_48dp.png",
         "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/drawable-xxxhdpi-v4/abc_ic_star_black_48dp.png"
+    },
+    {
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_015.png",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/res/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_015.png"
     },
     {
         "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/file_actions_white.png",

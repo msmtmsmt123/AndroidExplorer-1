@@ -40,12 +40,12 @@
         "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-ldpi/copy.png"
     },
     {
-        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/edit_fab_icon.png",
-        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-ldpi/edit_fab_icon.png"
-    },
-    {
         "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/blank.png",
         "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-ldpi/blank.png"
+    },
+    {
+        "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/edit_fab_icon.png",
+        "source": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/generated/res/pngs/debug/drawable-ldpi/edit_fab_icon.png"
     },
     {
         "merged": "/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/cut_white.png",

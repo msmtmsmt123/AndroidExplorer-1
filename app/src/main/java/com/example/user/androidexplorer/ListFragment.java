@@ -35,6 +35,7 @@ public class ListFragment extends Fragment {
     private Boolean folderFirst;
     private Integer listViewType;
     private CustomAdapter myAdapter;
+
     private LruCache<String, Bitmap> mMemoryCache;
     private ListView lv;
     private GridView gv;

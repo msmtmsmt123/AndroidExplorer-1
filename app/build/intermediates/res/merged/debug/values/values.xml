@@ -285,6 +285,7 @@
     <dimen name="design_tab_scrollable_min_width">72dp</dimen>
     <dimen name="design_tab_text_size">14sp</dimen>
     <dimen name="design_tab_text_size_2line">12sp</dimen>
+    <dimen name="diag_horizontal_margin">1dp</dimen>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
     <dimen name="drawable_padding">1dp</dimen>
@@ -387,10 +388,14 @@
     <string name="action_settings">Settings</string>
     <string name="action_show_files">Show hidden files</string>
     <string name="action_sort">Sort</string>
+    <string name="add_new_folder_title">Please enter the name of the new folder.</string>
     <string name="app_name">Android Explorer</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
+    <string name="cancel_response_button">Cancel</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
+    <string name="continue_response_button">Continue</string>
+    <string name="delete_dialog_title">Are you sure you want to delete the following?</string>
     <string name="fab_copy">Copy</string>
     <string name="fab_cut">Cut</string>
     <string name="fab_delete">Delete</string>
@@ -400,7 +405,10 @@
     <string name="fab_sort">Quick sort</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="negative_response_button">No</string>
+    <string name="positive_response_button">Yes</string>
     <string name="search_menu_title">Search</string>
+    <string name="sort_dialog_title">Quick sort options</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
@@ -1478,6 +1486,14 @@
         <item name="android:textSize">14sp</item>
         <item name="android:maxLines">2</item>
         <item name="android:ellipsize">end</item>
+    </style>
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Used for the buttons -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Used for the title and text -->
+        <item name="android:textColorPrimary">@color/pathBarTextFocus</item>
+        <!-- Used for the background -->
+
     </style>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>

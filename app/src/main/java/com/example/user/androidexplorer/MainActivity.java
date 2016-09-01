@@ -1,6 +1,8 @@
 package com.example.user.androidexplorer;
 
 import android.Manifest;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -14,6 +16,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -28,14 +31,20 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.OvershootInterpolator;
 import android.view.animation.TranslateAnimation;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
+import android.widget.TableLayout;
 import android.widget.TextView;
 
 import com.ogaclejapan.arclayout.ArcLayout;
 
 import java.io.File;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 public class MainActivity extends AppCompatActivity
@@ -45,23 +54,26 @@ public class MainActivity extends AppCompatActivity
     ArcLayout arcLayout;
     boolean openMenu;
     private boolean hasStoragePermission;
+    private boolean hasStorageWritePermission;
     private ListFragment fragment;
     private File root;
+    private File newFolder;
     private LinearLayout pathBarContainer;
     private HorizontalScrollView horizontalScrollView;
     private CustomAdapter currentAdapter;
     private boolean selectionMode;
-    FloatingActionButton fab;
-    LinearLayout popUpMenu;
-    ImageButton addFileBtn;
-    ImageButton addFolderBtn;
-    ImageButton addFavoriteBtn;
-    ImageButton deleteItemBtn;
-    ImageButton copyBtn;
-    ImageButton cutBtn;
-    ImageButton renameBtn;
-    ImageButton selectAllBtn;
-    boolean allItemsSelected;
+    private FloatingActionButton fab;
+    private LinearLayout popUpMenu;
+    private ImageButton addFileBtn;
+    private ImageButton addFolderBtn;
+    private ImageButton addFavoriteBtn;
+    private ImageButton deleteItemBtn;
+    private ImageButton copyBtn;
+    private ImageButton cutBtn;
+    private ImageButton renameBtn;
+    private ImageButton selectAllBtn;
+    private  boolean allItemsSelected;
+    private Intent starterIntent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,6 +92,8 @@ public class MainActivity extends AppCompatActivity
             // Fixes statusbar covers toolbar issue
             //toolbar.setPadding(0, getStatusBarHeight(), 0, 0);
         }
+
+        starterIntent = getIntent();
         //DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 //       //  Uncomment to show toggle icon in toolbar.
 //        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -107,19 +121,80 @@ public class MainActivity extends AppCompatActivity
         renameBtn=(ImageButton) findViewById(R.id.renamebutton);
         selectAllBtn=(ImageButton) findViewById(R.id.selectallbutton);
 
-        addFileBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                view.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.image_click));
-            }
-        });
+        pathBarContainer = (LinearLayout) findViewById(R.id.pathbarContainer);
+        horizontalScrollView = (HorizontalScrollView) findViewById(R.id.horizontalScrollView);
+        fragment = (ListFragment) getFragmentManager()
+                .findFragmentById(R.id.mainFragment);
 
         addFolderBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 view.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.image_click));
+                toggleMenu();
+
+                final EditText folderNameEntry=new EditText((MainActivity.this));
+
+                LinearLayout diagLayout=new LinearLayout(MainActivity.this);
+                diagLayout.setOrientation(LinearLayout.VERTICAL);
+                diagLayout.setPadding(50,0,50,0);
+                diagLayout.addView(folderNameEntry);
+
+
+                final AlertDialog d = new AlertDialog.Builder(MainActivity.this, R.style.MyAlertDialogStyle)
+                        .setView(diagLayout)
+                        .setTitle(R.string.add_new_folder_title)
+                        .setPositiveButton(android.R.string.ok, null) //Set to null. We override the onclick
+                        .setNegativeButton(android.R.string.cancel, null)
+                        .create();
+
+                d.setOnShowListener(new DialogInterface.OnShowListener() {
+
+                    @Override
+                    public void onShow(DialogInterface dialog) {
+
+                        Button b = d.getButton(AlertDialog.BUTTON_POSITIVE);
+                        b.setOnClickListener(new View.OnClickListener() {
+
+                            @Override
+                            public void onClick(View view) {
+                                // TODO Do something
+
+
+                                if (folderNameEntry.getText().toString().length()==0) {
+                                    folderNameEntry.setError("Folder name cannot be blank.");
+                                } else {
+                                    newFolder=new File(fragment.getCurrDir() + "/" + folderNameEntry.getText().toString() );
+                                    if (newFolder.exists()) {
+                                        folderNameEntry.setError("Folder alreadt exists.");
+                                    } else {
+                                        newFolder.mkdirs();
+                                        updateWholeScreen(newFolder.getParentFile());
+                                        d.dismiss();
+                                    }
+
+                                }
+                            }
+                        });
+                    }
+                });
+
+                d.show();
+
+
+
             }
         });
+
+        addFileBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                view.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.image_click));
+
+            }
+        });
+
+
 
         addFavoriteBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -179,10 +254,6 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        pathBarContainer = (LinearLayout) findViewById(R.id.pathbarContainer);
-        horizontalScrollView = (HorizontalScrollView) findViewById(R.id.horizontalScrollView);
-        fragment = (ListFragment) getFragmentManager()
-                .findFragmentById(R.id.mainFragment);
 
 
         fab.setOnClickListener(new View.OnClickListener() {
@@ -192,9 +263,9 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
+
         // Check if app has permission to read external storage
         if (canMakeSmores()) {
-
             // Check if app already has permission.
             int permissionCheck = ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.READ_EXTERNAL_STORAGE);
 
@@ -204,16 +275,47 @@ public class MainActivity extends AppCompatActivity
                         new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
                         225);
             } else {
-                hasStoragePermission = true;
+                updateWholeScreen(root);
             }
-        } else {
-            hasStoragePermission = true;
         }
 
-        if (hasStoragePermission) {
-            updateWholeScreen(root);
+    }
+
+
+    public void updateWholeScreen(File file) {
+
+        fragment.populateScreen(file);
+        currentAdapter = fragment.getMyAdapter();
+        updateFab(0);
+
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+
+        switch (requestCode) {
+            case 225: {
+                hasStoragePermission = grantResults[0] == PackageManager.PERMISSION_GRANTED;
+                if (hasStoragePermission) {
+                    updateWholeScreen(root);
+                } else {
+                    ActivityCompat.finishAffinity(this);
+                }
+                break;
+            }
+            case 227: {
+                hasStorageWritePermission = grantResults[0] == PackageManager.PERMISSION_GRANTED;
+                if (hasStorageWritePermission) {
+                    newFolder.mkdir();
+                }
+                break;
+            }
+            // other 'case' lines to check for other
+            // permissions this app might request
+
         }
 
+        return;
     }
 
     public void toggleMenu() {
@@ -382,30 +484,8 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-    @Override
-    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
 
-        switch (requestCode) {
-            case 225: {
-                hasStoragePermission = grantResults[0] == PackageManager.PERMISSION_GRANTED;
-                if (hasStoragePermission) {
-                    updateWholeScreen(root);
-                } else {
-                    ActivityCompat.finishAffinity(this);
-                }
-                break;
-            }
-            // other 'case' lines to check for other
-            // permissions this app might request
 
-        }
-    }
-
-    public void updateWholeScreen(File file) {
-        fragment.populateScreen(file);
-        currentAdapter = fragment.getMyAdapter();
-        updateFab(0);
-    }
 
 
     public void setPathbar(String xpath) {
