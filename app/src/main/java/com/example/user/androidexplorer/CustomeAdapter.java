@@ -3,15 +3,24 @@ package com.example.user.androidexplorer;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Handler;
+import android.support.v4.content.ContextCompat;
+import android.support.v4.graphics.drawable.DrawableCompat;
 import android.support.v4.util.LruCache;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,7 +29,9 @@ import android.widget.BaseAdapter;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.File;
 import java.lang.ref.WeakReference;
@@ -62,7 +73,7 @@ class CustomAdapter extends BaseAdapter {
             mCheckedState[i] = false;
         }
         imgDispType = imgDisplayType;
-        context = mainActivity;
+        context =  mainActivity;
         callFragment = fragment;
         imageId = prgmImages;
         currPath = path;
@@ -235,24 +246,56 @@ class CustomAdapter extends BaseAdapter {
         return extension;
     }
 
-    public void loadBitmap(File img, ImageView imageView) {
-        Bitmap mPlaceHolderBitmap = BitmapFactory.decodeResource(context.getResources(),
-                R.drawable.blank);
-        String imageKey = img.getAbsolutePath().toString();
-        final Bitmap bitmap = getBitmapFromMemCache(imageKey);
+    public void loadBitmap(File img, ImageView imageView,ProgressBar progressBar,Context bmContext) {
 
-        if (bitmap != null) {
-            imageView.setImageBitmap(bitmap);
-        } else {
 
-            if (cancelPotentialWork(img, imageView)) {
-                final BitmapWorkerTask task = new BitmapWorkerTask(mMemoryCache, imageView, reqWidth, reqHeight);
-                final AsyncDrawable asyncDrawable =
-                        new AsyncDrawable(context.getResources(), mPlaceHolderBitmap, task);
-                imageView.setImageDrawable(asyncDrawable);
-                task.execute(img);
+          /*  Bitmap mPlaceHolderBitmap = BitmapFactory.decodeResource(bmContext.getResources(),
+                    R.drawable.blank);*/
+
+        Drawable defDrawable = ContextCompat.getDrawable(bmContext, R.drawable.blank);
+        Bitmap mPlaceHolderBitmap= drawableToBitmap(defDrawable);
+        Log.d("BITMAPXXX","Holder bitmap xxxyyy:" + mPlaceHolderBitmap);
+
+            String imageKey = img.getAbsolutePath().toString();
+            final Bitmap bitmap = getBitmapFromMemCache(imageKey);
+
+            if (bitmap != null) {
+                progressBar.setVisibility(View.GONE);
+                imageView.setVisibility(View.VISIBLE);
+                imageView.setImageBitmap(bitmap);
+            } else {
+
+                if (cancelPotentialWork(img, imageView)) {
+                    final BitmapWorkerTask task = new BitmapWorkerTask(mMemoryCache, imageView,progressBar, reqWidth,reqHeight,mPlaceHolderBitmap);
+                    final AsyncDrawable asyncDrawable =
+                            new AsyncDrawable(context.getResources(), mPlaceHolderBitmap, task);
+                    imageView.setImageDrawable(asyncDrawable);
+                    task.execute(img);
+                }
+            }
+
+    }
+
+    public static Bitmap drawableToBitmap (Drawable drawable) {
+        Bitmap bitmap = null;
+
+        if (drawable instanceof BitmapDrawable) {
+            BitmapDrawable bitmapDrawable = (BitmapDrawable) drawable;
+            if(bitmapDrawable.getBitmap() != null) {
+                return bitmapDrawable.getBitmap();
             }
         }
+
+        if(drawable.getIntrinsicWidth() <= 0 || drawable.getIntrinsicHeight() <= 0) {
+            bitmap = Bitmap.createBitmap(1, 1, Bitmap.Config.ARGB_8888); // Single color bitmap will be created of 1x1 pixel
+        } else {
+            bitmap = Bitmap.createBitmap(drawable.getIntrinsicWidth(), drawable.getIntrinsicHeight(), Bitmap.Config.ARGB_8888);
+        }
+
+        Canvas canvas = new Canvas(bitmap);
+        drawable.setBounds(0, 0, canvas.getWidth(), canvas.getHeight());
+        drawable.draw(canvas);
+        return bitmap;
     }
 
     public void addBitmapToMemoryCache(String key, Bitmap bitmap) {
@@ -280,6 +323,7 @@ class CustomAdapter extends BaseAdapter {
                 holder.info2 = (TextView) convertView.findViewById(R.id.info2);
                 holder.img = (ImageView) convertView.findViewById(R.id.imageView1);
                 holder.cb = (CheckBox) convertView.findViewById(R.id.checkBox);
+                holder.progressBar=(ProgressBar) convertView.findViewById(R.id.progressBar);
             } else {
                 convertView = inflater.inflate(R.layout.item_list_grid, null);
                 holder.tv = (TextView) convertView.findViewById(R.id.textView1_grid);
@@ -294,6 +338,9 @@ class CustomAdapter extends BaseAdapter {
         } else {
             holder = (Holder) convertView.getTag();
         }
+
+        holder.progressBar.setVisibility(View.VISIBLE);
+        holder.img.setVisibility(View.GONE);
 
         // keep check after scroll
         holder.cb.setOnCheckedChangeListener(null);
@@ -332,7 +379,11 @@ class CustomAdapter extends BaseAdapter {
 
         if (imgDispType.equals(DISPLAY_AS_ICON)) {
 
-            holder.img.setImageResource(imageId.get(position));
+            Drawable mDrawable = ContextCompat.getDrawable(context,imageId.get(position));
+            Drawable wrappedDrawable = DrawableCompat.wrap(mDrawable);
+            wrappedDrawable = wrappedDrawable.mutate();
+            DrawableCompat.setTint(wrappedDrawable, ContextCompat.getColor(context, R.color.list_icon_color));
+            holder.img.setImageDrawable(wrappedDrawable);
 
         } else {
 
@@ -344,21 +395,72 @@ class CustomAdapter extends BaseAdapter {
 
                 switch (ext) {
                     case "jpg":
-                        loadBitmap(currFile, holder.img);
+                        loadBitmap(currFile, holder.img,holder.progressBar,context);
+                        break;
+                    case "jpeg":
+                        loadBitmap(currFile, holder.img,holder.progressBar,context);
                         break;
                     case "png":
-                        loadBitmap(currFile, holder.img);
+                        loadBitmap(currFile, holder.img,holder.progressBar,context);
                         break;
                     case "bmp":
-                        loadBitmap(currFile, holder.img);
+                        loadBitmap(currFile, holder.img,holder.progressBar,context);
+                        break;
+                    case "apk":  ;
+                            String filePath = currFile.getPath();
+                            PackageInfo packageInfo = context.getPackageManager().getPackageArchiveInfo(filePath, PackageManager.GET_ACTIVITIES);
+                            if(packageInfo != null) {
+                                ApplicationInfo appInfo = packageInfo.applicationInfo;
+                                if (Build.VERSION.SDK_INT >= 8) {
+                                    appInfo.sourceDir = filePath;
+                                    appInfo.publicSourceDir = filePath;
+                                }
+                                final Drawable icon = appInfo.loadIcon(context.getPackageManager());
+                                holder.img.setImageDrawable(icon);
+                                holder.progressBar.setVisibility(View.GONE);
+                                holder.img.setVisibility(View.VISIBLE);
+                            }
                         break;
                     default:
-                        holder.img.setImageResource(imageId.get(position));
+                        holder.progressBar.setVisibility(View.GONE);
+                        holder.img.setVisibility(View.VISIBLE);
+
+                        String mimeType = MimeTypeMap.getSingleton().getMimeTypeFromExtension(ext);
+                        if (mimeType != null || mimeType == "xxx") {
+                            final Intent i = new Intent();
+                            i.setAction(android.content.Intent.ACTION_VIEW);
+                            i.setDataAndType(Uri.fromFile(currFile), mimeType);
+                            PackageManager pm = context.getPackageManager();
+                            final ResolveInfo mInfo = pm.resolveActivity(i, 0);
+
+                            if (pm.getApplicationLabel(mInfo.activityInfo.applicationInfo).equals("Android system")) {
+                                Drawable mDrawable = ContextCompat.getDrawable(context,imageId.get(position));
+                                Drawable wrappedDrawable = DrawableCompat.wrap(mDrawable);
+                                wrappedDrawable = wrappedDrawable.mutate();
+                                DrawableCompat.setTint(wrappedDrawable, ContextCompat.getColor(context, R.color.list_icon_color));
+                                holder.img.setImageDrawable(wrappedDrawable);
+                            } else {
+                                final Drawable icon = mInfo.loadIcon(context.getPackageManager());
+                                holder.img.setImageDrawable(icon);
+                            }
+
+                        } else {
+                            Drawable mDrawable = ContextCompat.getDrawable(context,imageId.get(position));
+                            Drawable wrappedDrawable = DrawableCompat.wrap(mDrawable);
+                            wrappedDrawable = wrappedDrawable.mutate();
+                            DrawableCompat.setTint(wrappedDrawable, ContextCompat.getColor(context, R.color.list_icon_color));
+                            holder.img.setImageDrawable(wrappedDrawable);
+                            //holder.img.setImageResource(imageId.get(position));
+
+                        }
                         break;
                 }
 
             } else {
+                holder.progressBar.setVisibility(View.GONE);
+                holder.img.setVisibility(View.VISIBLE);
                 holder.img.setImageResource(imageId.get(position));
+
             }
 
         }
@@ -435,6 +537,7 @@ class CustomAdapter extends BaseAdapter {
         TextView info1;
         TextView info2;
         // TextView info3;
+        ProgressBar progressBar;
         ImageView img;
         CheckBox cb;
 
@@ -444,33 +547,49 @@ class CustomAdapter extends BaseAdapter {
 }
 
 
-class BitmapWorkerTask extends AsyncTask<File, Void, Bitmap> {
+class BitmapWorkerTask extends AsyncTask<File, Void, Bitmap>   {
     private final WeakReference<ImageView> imageViewReference;
+    private final WeakReference<ProgressBar> progressBarWeakReference;
     File data;
     LruCache<String, Bitmap> mMemoryCache;
     int width;
     int height;
+    Bitmap defBM;
 
-    public BitmapWorkerTask(LruCache<String, Bitmap> memCache, ImageView imageView, int reqWidth, int reqHeight) {
+
+    public BitmapWorkerTask(LruCache<String, Bitmap> memCache, ImageView imageView, ProgressBar progressBar,int reqWidth, int reqHeight,Bitmap bm) {
         imageViewReference = new WeakReference<>(imageView);
+        progressBarWeakReference= new WeakReference<>(progressBar);
         mMemoryCache = memCache;
         width = reqWidth;
         height = reqHeight;
+        defBM=bm;
     }
 
-    public static Bitmap decodeSampledBitmapFromResource(File img, int reqWidth, int reqHeight) {
+    public static Bitmap decodeSampledBitmapFromResource(File img, int reqWidth, int reqHeight,Bitmap bm) {
 
-        // First decode with inJustDecodeBounds=true to check dimensions
-        final BitmapFactory.Options options = new BitmapFactory.Options();
-        options.inJustDecodeBounds = true;
-        BitmapFactory.decodeFile(img.toString(), options);
+        BitmapFactory.Options testOptions = new BitmapFactory.Options();
+        testOptions.inJustDecodeBounds = true;
+        Bitmap testBM=BitmapFactory.decodeFile(img.toString(),testOptions);
+        Log.d("OPTIONS","OPTION:" + testOptions.outHeight);
+        Bitmap returnBM;
+        if (testOptions.outHeight!=-1) {
+            // First decode with inJustDecodeBounds=true to check dimensions
+            final BitmapFactory.Options options = new BitmapFactory.Options();
+            options.inJustDecodeBounds = true;
+            BitmapFactory.decodeFile(img.toString(), options);
 
-        // Calculate inSampleSize
-        options.inSampleSize = calculateInSampleSize(options, reqWidth, reqHeight);
+            // Calculate inSampleSize
 
-        // Decode bitmap with inSampleSize set
-        options.inJustDecodeBounds = false;
-        return BitmapFactory.decodeFile(img.toString(), options);
+            options.inSampleSize = calculateInSampleSize(options, reqWidth, reqHeight);
+
+            // Decode bitmap with inSampleSize set
+            options.inJustDecodeBounds = false;
+            return BitmapFactory.decodeFile(img.toString(), options);
+
+        } else {
+           return bm;
+        }
     }
 
     public static int calculateInSampleSize(
@@ -512,31 +631,35 @@ class BitmapWorkerTask extends AsyncTask<File, Void, Bitmap> {
 
         data = params[0];
         Bitmap sqrBitmap;
-        final Bitmap bitmap = decodeSampledBitmapFromResource(data, width, height);
+        final Bitmap bitmap = decodeSampledBitmapFromResource(data, width, height,defBM);
 
 
         // get square bitmap
-        if (bitmap.getWidth() >= bitmap.getHeight()) {
+        if (bitmap!=null) {
+            if (bitmap.getWidth() >= bitmap.getHeight()) {
 
-            sqrBitmap = Bitmap.createBitmap(
-                    bitmap,
-                    bitmap.getWidth() / 2 - bitmap.getHeight() / 2,
-                    0,
-                    bitmap.getHeight(),
-                    bitmap.getHeight()
-            );
+                sqrBitmap = Bitmap.createBitmap(
+                        bitmap,
+                        bitmap.getWidth() / 2 - bitmap.getHeight() / 2,
+                        0,
+                        bitmap.getHeight(),
+                        bitmap.getHeight()
+                );
+            } else {
 
+                sqrBitmap = Bitmap.createBitmap(
+                        bitmap,
+                        0,
+                        bitmap.getHeight() / 2 - bitmap.getWidth() / 2,
+                        bitmap.getWidth(),
+                        bitmap.getWidth()
+                );
+            }
+            addBitmapToMemoryCache(data.getAbsolutePath(), sqrBitmap);
         } else {
-
-            sqrBitmap = Bitmap.createBitmap(
-                    bitmap,
-                    0,
-                    bitmap.getHeight() / 2 - bitmap.getWidth() / 2,
-                    bitmap.getWidth(),
-                    bitmap.getWidth()
-            );
+            sqrBitmap=null;
         }
-        addBitmapToMemoryCache(data.getAbsolutePath(), sqrBitmap);
+
         return sqrBitmap;
 
     }
@@ -560,10 +683,14 @@ class BitmapWorkerTask extends AsyncTask<File, Void, Bitmap> {
 
         if (imageViewReference != null && bitmap != null) {
             final ImageView imageView = imageViewReference.get();
+            final ProgressBar progressBar=progressBarWeakReference.get();
             final BitmapWorkerTask bitmapWorkerTask =
                     getBitmapWorkerTask(imageView);
             if (this == bitmapWorkerTask && imageView != null) {
                 imageView.setImageBitmap(bitmap);
+                progressBar.setVisibility(View.GONE);
+                imageView.setVisibility(View.VISIBLE);
+
             }
         }
     }

@@ -25,5 +25,7 @@
     <string name="cancel_response_button">Cancel</string>
 
     <string name="add_new_folder_title">Please enter the name of the new folder.</string>
+    <string name="add_new_file_title">Please enter the name of the new file.</string>
+
 
 </resources>

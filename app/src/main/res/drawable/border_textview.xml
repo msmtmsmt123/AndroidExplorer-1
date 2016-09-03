@@ -5,7 +5,11 @@
             android:width="0.1dp"
             android:color="@color/tumblr_primary" />
         <solid android:color="@color/tumblr_white" />
-
+        <corners
+            android:bottomLeftRadius="2dip"
+            android:bottomRightRadius="2dip"
+            android:topLeftRadius="2dip"
+            android:topRightRadius="2dip" />
     </shape>
 
 </inset>

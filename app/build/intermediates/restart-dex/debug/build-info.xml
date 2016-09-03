@@ -4,52 +4,51 @@
     api-level="23"
     density="xxhdpi"
     format="7"
-    timestamp="10513791501087"
-    token="8731846693003273382"
-    verifier="COMPATIBLE" >
+    timestamp="28290613633225"
+    token="8731846693003273382" >
 
     <task
         name="javac"
-        duration="110" />
+        duration="0" />
     <task
         name="instant-run-dex"
-        duration="454" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="17" />
+        duration="0" />
     <task
         name="verifier"
-        duration="3" />
+        duration="0" />
 
     <artifact
-        location="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/reload-dex/debug/classes.dex"
-        type="RELOAD_DEX" />
+        location="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/resources-debug.ap_"
+        type="RESOURCES" />
 
-    <build timestamp="6753379261820" >
+    <build timestamp="26518736994200" >
         <artifact
             location="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="10436034156631"
-        verifier="CLASS_ADDED" >
+        timestamp="28152007659592"
+        verifier="R_CLASS_CHANGE" >
+        <artifact
+            location="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
+            type="DEX" />
         <artifact
             location="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
             type="DEX" />
     </build>
-    <build
-        timestamp="10478107957869"
-        verifier="COMPATIBLE" >
+    <build timestamp="28290613633225" >
         <artifact
-            location="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/builds/debug/10478107957869/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="10513791501087"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/reload-dex/debug/classes.dex"
-            type="RELOAD_DEX" />
+            location="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/res/resources-debug.ap_"
+            type="RESOURCES" />
     </build>
 
 </instant-run>

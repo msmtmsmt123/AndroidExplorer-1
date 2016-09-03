@@ -5,7 +5,7 @@
         <stroke
             android:width="0.1dp"
             android:color="@color/path_black" />
-        <solid android:color="@color/colorPrimary" />
+        <solid android:color="@color/popup_menu" />
         <corners
             android:bottomRightRadius="50dp"
             android:topRightRadius="50dp" />

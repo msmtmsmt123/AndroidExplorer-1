@@ -40,9 +40,9 @@
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
     <color name="colorAccent">#748089</color>
-    <color name="colorPrimary">#748089</color>
+    <color name="colorPrimary">#f3f3f3</color>
     <color name="colorPrimaryAlternate">#42000000</color>
-    <color name="colorPrimaryDark">#748089</color>
+    <color name="colorPrimaryDark">#36465D</color>
     <color name="cyan_500">#00BCD4</color>
     <color name="design_fab_shadow_end_color">@android:color/transparent</color>
     <color name="design_fab_shadow_mid_color">#14000000</color>
@@ -68,6 +68,7 @@
     <color name="hint_foreground_material_light">@color/bright_foreground_disabled_material_light</color>
     <color name="light_blue_500">#03A9F4</color>
     <color name="light_green_500">#8BC34A</color>
+    <color name="list_icon_color">#748089</color>
     <color name="material_blue_grey_800">#ff37474f</color>
     <color name="material_blue_grey_900">#ff263238</color>
     <color name="material_blue_grey_950">#ff21272b</color>
@@ -88,6 +89,7 @@
     <color name="path_orange">#FF9500</color>
     <color name="path_primary">#E62F17</color>
     <color name="path_purple">#49098A</color>
+    <color name="popup_menu">#36465D</color>
     <color name="primary_dark_material_dark">@android:color/black</color>
     <color name="primary_dark_material_light">@color/material_grey_600</color>
     <color name="primary_material_dark">@color/material_grey_900</color>
@@ -327,6 +329,7 @@
     <dimen name="notification_large_icon_width">64dp</dimen>
     <dimen name="notification_subtext_size">12dp</dimen>
     <dimen name="pop_menu_margin">17dp</dimen>
+    <dimen name="popup_menu_padding">10dp</dimen>
     <item name="ic_menu_camera" type="drawable">@android:drawable/ic_menu_camera</item>
     <item name="ic_menu_gallery" type="drawable">@android:drawable/ic_menu_gallery</item>
     <item name="ic_menu_manage" type="drawable">@android:drawable/ic_menu_manage</item>
@@ -388,6 +391,7 @@
     <string name="action_settings">Settings</string>
     <string name="action_show_files">Show hidden files</string>
     <string name="action_sort">Sort</string>
+    <string name="add_new_file_title">Please enter the name of the new file.</string>
     <string name="add_new_folder_title">Please enter the name of the new folder.</string>
     <string name="app_name">Android Explorer</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>

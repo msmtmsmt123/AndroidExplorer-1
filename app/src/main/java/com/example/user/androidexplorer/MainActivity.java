@@ -4,6 +4,10 @@ import android.Manifest;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.EmbossMaskFilter;
+import android.graphics.MaskFilter;
+import android.graphics.Paint;
+import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
@@ -18,7 +22,10 @@ import android.support.v4.view.ViewCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutCompat;
 import android.support.v7.widget.Toolbar;
+import android.text.InputType;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
@@ -43,6 +50,8 @@ import android.widget.TextView;
 import com.ogaclejapan.arclayout.ArcLayout;
 
 import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -74,6 +83,7 @@ public class MainActivity extends AppCompatActivity
     private ImageButton selectAllBtn;
     private  boolean allItemsSelected;
     private Intent starterIntent;
+    private ArrayList<File> dirList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -134,6 +144,7 @@ public class MainActivity extends AppCompatActivity
                 toggleMenu();
 
                 final EditText folderNameEntry=new EditText((MainActivity.this));
+                folderNameEntry.setInputType(InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS);
 
                 LinearLayout diagLayout=new LinearLayout(MainActivity.this);
                 diagLayout.setOrientation(LinearLayout.VERTICAL);
@@ -166,7 +177,7 @@ public class MainActivity extends AppCompatActivity
                                 } else {
                                     newFolder=new File(fragment.getCurrDir() + "/" + folderNameEntry.getText().toString() );
                                     if (newFolder.exists()) {
-                                        folderNameEntry.setError("Folder alreadt exists.");
+                                        folderNameEntry.setError("Folder already exists.");
                                     } else {
                                         newFolder.mkdirs();
                                         updateWholeScreen(newFolder.getParentFile());
@@ -191,6 +202,61 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View view) {
                 view.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.image_click));
 
+                toggleMenu();
+
+                final EditText folderNameEntry=new EditText((MainActivity.this));
+                folderNameEntry.setInputType(InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS);
+
+                LinearLayout diagLayout=new LinearLayout(MainActivity.this);
+                diagLayout.setOrientation(LinearLayout.VERTICAL);
+                diagLayout.setPadding(50,0,50,0);
+                diagLayout.addView(folderNameEntry);
+
+
+                final AlertDialog d = new AlertDialog.Builder(MainActivity.this, R.style.MyAlertDialogStyle)
+                        .setView(diagLayout)
+                        .setTitle(R.string.add_new_file_title)
+                        .setPositiveButton(android.R.string.ok, null) //Set to null. We override the onclick
+                        .setNegativeButton(android.R.string.cancel, null)
+                        .create();
+
+                d.setOnShowListener(new DialogInterface.OnShowListener() {
+
+                    @Override
+                    public void onShow(DialogInterface dialog) {
+
+                        Button b = d.getButton(AlertDialog.BUTTON_POSITIVE);
+                        b.setOnClickListener(new View.OnClickListener() {
+
+                            @Override
+                            public void onClick(View view) {
+                                // TODO Do something
+
+
+                                if (folderNameEntry.getText().toString().length()==0) {
+                                    folderNameEntry.setError("File name cannot be blank.");
+                                } else {
+                                    newFolder=new File(fragment.getCurrDir().getAbsolutePath() + "/" + folderNameEntry.getText().toString() );
+                                    if (newFolder.exists()) {
+                                        folderNameEntry.setError("File already exists.");
+                                    } else {
+                                        try {
+                                            newFolder.createNewFile();
+                                        } catch (IOException e) {
+                                            e.printStackTrace();
+                                        }
+                                        updateWholeScreen(newFolder.getParentFile());
+                                        d.dismiss();
+                                    }
+
+                                }
+                            }
+                        });
+                    }
+                });
+
+                d.show();
+
             }
         });
 
@@ -207,7 +273,66 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view) {
                 view.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.image_click));
+                toggleMenu();
+
+                // Initialise and design delete dialog elements.
+                dirList=fragment.getDirList();
+                ScrollView diagScroll=new ScrollView((MainActivity.this));
+                LinearLayout diagLayout=new LinearLayout(MainActivity.this);
+                diagLayout.setOrientation(LinearLayout.VERTICAL);
+                diagLayout.setPadding(0,60,0,0);
+
+                if (currentAdapter.getCheckedCOunt()>0) {
+
+                    final boolean[] checkedItems=currentAdapter.getSelection();
+                    for (int i=0;i<checkedItems.length;i++){
+                        if (checkedItems[i]) {
+                            TextView textView = new TextView(MainActivity.this);
+                            textView.setText(" " + dirList.get(i).getName());
+                            textView.setSingleLine();
+                            textView.setEllipsize(TextUtils.TruncateAt.MIDDLE);
+                            LinearLayout.LayoutParams llp = new LinearLayout.LayoutParams(LinearLayoutCompat.LayoutParams.WRAP_CONTENT, LinearLayoutCompat.LayoutParams.WRAP_CONTENT);
+                            llp.setMargins(60, 0, 60, 20); // llp.setMargins(left, top, right, bottom);
+                            textView.setLayoutParams(llp);
+                            textView.setCompoundDrawablesWithIntrinsicBounds(fragment.getFileIcon(i),0, 0,  0);
+                            diagLayout.addView(textView);
+                        }
+                    }
+
+                    diagScroll.addView(diagLayout);
+
+                    // Create delete dialog
+                    AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this, R.style.MyAlertDialogStyle);
+                    builder.setTitle(R.string.delete_dialog_title );
+                    builder.setView(diagScroll);
+                    builder.setPositiveButton(R.string.positive_response_button,
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog,
+                                                    int which) {
+                                    Snackbar.make(horizontalScrollView, "Deleted!", Snackbar.LENGTH_SHORT)
+                                            .setAction("Action", null).show();
+                                    for (int i=0;i<checkedItems.length;i++){
+                                        if (checkedItems[i]) {
+                                           dirList.get(i).delete();
+                                        }
+                                    }
+                                    updateWholeScreen(fragment.getCurrDir());
+                                    onBackPressed();
+                                    dialog.dismiss();
+                                }
+                            });
+                    builder.setNegativeButton(R.string.negative_response_button, null);
+                    builder.show();
+
+                } else {
+
+                    Snackbar.make(view, "You have not selected anything.", Snackbar.LENGTH_SHORT)
+                            .setAction("Action", null).show();
+                }
+
             }
+
         });
 
         copyBtn.setOnClickListener(new View.OnClickListener() {
@@ -346,7 +471,7 @@ public class MainActivity extends AppCompatActivity
                 .rotation(45.0F)
                 .withLayer()
                 .setDuration(300L)
-                .setInterpolator(new OvershootInterpolator(10.0F))
+                .setInterpolator(new OvershootInterpolator(1.0F))
                 .start();
     }
 
@@ -355,16 +480,16 @@ public class MainActivity extends AppCompatActivity
                 .rotation(0.0F)
                 .withLayer()
                 .setDuration(300L)
-                .setInterpolator(new OvershootInterpolator(10.0F))
+                .setInterpolator(new OvershootInterpolator(1.0F))
                 .start();
     }
 
     public void rotateFabFullForward() {
         ViewCompat.animate(fab)
-                .rotation(-90.0F)
+                .rotation(90.0F)
                 .withLayer()
                 .setDuration(300L)
-                .setInterpolator(new OvershootInterpolator(10.0F))
+                .setInterpolator(new OvershootInterpolator(1.0F))
                 .start();
     }
 
@@ -373,7 +498,7 @@ public class MainActivity extends AppCompatActivity
                 .rotation(0.0F)
                 .withLayer()
                 .setDuration(300L)
-                .setInterpolator(new OvershootInterpolator(10.0F))
+                .setInterpolator(new OvershootInterpolator(1.0F))
                 .start();
     }
 
@@ -416,7 +541,7 @@ public class MainActivity extends AppCompatActivity
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             if (selectionMode) {
                 updateFab(1);
-                fab.setImageDrawable(getResources().getDrawable(R.drawable.edit_fab, this.getTheme()));
+                fab.setImageDrawable(getResources().getDrawable(R.drawable.ic_menu_white, this.getTheme()));
             } else {
                 updateFab(0);
                 fab.setImageDrawable(getResources().getDrawable(R.drawable.add_white, this.getTheme()));
@@ -426,7 +551,7 @@ public class MainActivity extends AppCompatActivity
 
             if (selectionMode) {
                 updateFab(1);
-                fab.setImageDrawable(ContextCompat.getDrawable(this,R.drawable.edit_fab));
+                fab.setImageDrawable(ContextCompat.getDrawable(this,R.drawable.ic_menu_white));
             } else {
                 updateFab(0);
                 fab.setImageDrawable(ContextCompat.getDrawable(this,R.drawable.add_white));
@@ -499,7 +624,7 @@ public class MainActivity extends AppCompatActivity
         final TextView homeTextView = new TextView(this);
         homeTextView.setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.right_arrow_dark, 0, 0, 0);
         homeTextView.setGravity(Gravity.CENTER_VERTICAL);
-        homeTextView.setCompoundDrawablePadding(20);
+       // homeTextView.setCompoundDrawablePadding(20);
         homeTextView.setText("Internal Storage");
         homeTextView.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.pathBarTextFocus));
         homeTextView.setOnClickListener(new DoubleClickListener() {

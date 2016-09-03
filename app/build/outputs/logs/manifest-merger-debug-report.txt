@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:2:1-26:12
+ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:2:1-27:12
 	package
 		ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:3:5-47
 		INJECTED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml
@@ -22,7 +22,7 @@ ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/Androi
 	android:name
 		ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:6:22-77
 application
-ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:8:5-24:19
+ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:8:5-25:19
 MERGED from [com.android.support:appcompat-v7:24.2.0] /home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-vector-drawable:24.2.0] /home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.0/AndroidManifest.xml:23:5-20
 MERGED from [com.android.support:support-compat:24.2.0] /home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
@@ -154,33 +154,33 @@ MERGED from [com.android.support:support-compat:24.2.0] /home/ninomarlou/Android
 MERGED from [com.android.support:support-core-ui:24.2.0] /home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:24.2.0] /home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
 	android:label
-		ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:11:9-41
+		ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:12:9-41
 	android:supportsRtl
-		ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:12:9-35
+		ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:13:9-35
 	android:allowBackup
-		ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:9:9-35
+		ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:10:9-35
 	android:icon
-		ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:10:9-43
+		ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:11:9-43
 	android:theme
-		ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:13:9-40
+		ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:14:9-40
 activity#com.example.user.androidexplorer.MainActivity
-ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:14:9-23:20
+ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:15:9-24:20
 	android:label
-		ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:16:13-45
+		ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:17:13-45
 	android:theme
-		ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:17:13-56
+		ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:18:13-56
 	android:name
-		ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:15:13-41
+		ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:16:13-41
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:18:13-22:29
+ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:19:13-23:29
 action#android.intent.action.MAIN
-ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:19:17-69
+ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:20:17-69
 	android:name
-		ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:19:25-66
+		ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:20:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:21:17-77
+ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:22:17-77
 	android:name
-		ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:21:27-74
+		ADDED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml:22:27-74
 uses-sdk
 INJECTED from /home/ninomarlou/Android/Projects/AndroidExplorer/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:24.2.0] /home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/AndroidManifest.xml:21:5-23:78

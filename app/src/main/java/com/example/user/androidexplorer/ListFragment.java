@@ -1,9 +1,16 @@
 package com.example.user.androidexplorer;
 
 import android.app.Fragment;
+import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.util.LruCache;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -98,6 +105,31 @@ public class ListFragment extends Fragment {
         populateScreen(upFolder);
     }
 
+    public ArrayList<File> getDirList() {
+        return dirList;
+    }
+
+    public Integer getFileIcon(int i) {
+
+    return iconFileDirLlist.get(i);
+
+    }
+
+    public static boolean isInteger(String s) {
+        return isInteger(s,10);
+    }
+
+    public static boolean isInteger(String s, int radix) {
+        if(s.isEmpty()) return false;
+        for(int i = 0; i < s.length(); i++) {
+            if(i == 0 && s.charAt(i) == '-') {
+                if(s.length() == 1) return false;
+                else continue;
+            }
+            if(Character.digit(s.charAt(i),radix) < 0) return false;
+        }
+        return true;
+    }
 
     public CustomAdapter getMyAdapter() {
         return myAdapter;
@@ -200,6 +232,8 @@ public class ListFragment extends Fragment {
         }
 
     }
+
+
 
 
     public void getfile(File dir) {

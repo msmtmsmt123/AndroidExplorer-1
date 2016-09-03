@@ -1,9 +1,13 @@
 package com.example.user.androidexplorer;
 
 import android.content.Context;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.media.ThumbnailUtils;
+import android.util.Log;
+import android.webkit.MimeTypeMap;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -338,12 +342,21 @@ public class MyFileList {
 
     }
 
-    private Integer getFileIcon(File dir) {
+    public static String getMimeType(String url) {
+        String type = null;
+        String extension = MimeTypeMap.getFileExtensionFromUrl(url);
+        if (extension != null) {
+            type = MimeTypeMap.getSingleton().getMimeTypeFromExtension(extension);
+        }
+        return type;
+    }
 
+    private Integer getFileIcon(File dir) {
+        Log.d("MIMETYPE","File: " + dir.getName() + ", Type:" + getMimeType(dir.getAbsolutePath()));
         Integer returnVal;
 
         if (dir.isDirectory()) {
-            returnVal = R.drawable.folder;
+            returnVal = R.drawable.ic_folder_colored;
         } else {
             String extension1 = "xxx";
             String[] fileNameArray;
@@ -358,28 +371,91 @@ public class MyFileList {
             String extension = "blank";
             if (!isInteger(extension1)) {
                 switch (extension1) {
-                    case "class":
-                        extension = "xclass";
-                        break;
                     case "7z":
-                        extension = "x7z";
+                        extension = "archive";
+                        break;
+                    case "gz":
+                        extension = "archive";
+                        break;
+                    case "zip":
+                        extension = "archive";
+                        break;
+                    case "rar":
+                        extension = "archive";
+                        break;
+                    case "tar":
+                        extension = "archive";
                         break;
                     case "3gp":
-                        extension = "x3gp";
+                        extension = "video";
                         break;
-                    case "3g2":
-                        extension = "x3g2";
+                    case "mp3":
+                        extension = "music";
                         break;
-                    case "3ds":
-                        extension = "x3ds";
+                    case "wav":
+                        extension = "music";
                         break;
-                    case "3dm":
-                        extension = "x3dm";
+                    case "m4b":
+                        extension = "music";
                         break;
-                    case "1":
-                        extension = "blank";
+                    case "gif":
+                        extension = "image";
+                        break;
+                    case "png":
+                        extension = "image";
+                        break;
+                    case "raw":
+                        extension = "image";
+                        break;
+                    case "mp4":
+                        extension = "video";
+                        break;
+                    case "avi":
+                        extension = "video";
+                        break;
+                    case "flv":
+                        extension = "video";
+                        break;
+                    case "mkv":
+                        extension = "video";
+                        break;
+                    case "mpeg":
+                        extension = "video";
+                        break;
+                    case "mov":
+                        extension = "video";
+                        break;
+                    case "csv":
+                        extension = "delimited";
+                        break;
+                    case "del":
+                        extension = "delimited";
+                        break;
+                    case "doc":
+                        extension = "document";
+                        break;
+                    case "docx":
+                        extension = "document";
+                        break;
+                    case "txt":
+                        extension = "document";
+                        break;
+                    case "log":
+                        extension = "document";
+                        break;
+                    case "rtf":
+                        extension = "document";
+                        break;
+                    case "xml":
+                        extension = "xml";
+                        break;
+                    case "html":
+                        extension = "xml";
                         break;
                     case "nomedia":
+                        extension = "blank";
+                        break;
+                    case "1":
                         extension = "blank";
                         break;
                     default:
@@ -390,9 +466,9 @@ public class MyFileList {
 
             int checkExistence = mContext.getResources().getIdentifier(extension, "drawable", mContext.getPackageName());
             final Integer resID;
-            // Log.e("RESOURCE_ID", "Extension is : " + extension + ", Resource ID is :" + checkExistence);
+             Log.e("RESOURCE_ID", "Extension is : " + extension + ", Resource ID is :" + checkExistence);
             if (checkExistence != 0) {  // the resouce exists...
-                resID = mContext.getResources().getIdentifier(extension, "drawable", mContext.getPackageName());
+                    resID = mContext.getResources().getIdentifier(extension, "drawable", mContext.getPackageName());
 
             } else {  // checkExistence == 0  // the resouce does NOT exist!!
                 resID = R.drawable.blank;
