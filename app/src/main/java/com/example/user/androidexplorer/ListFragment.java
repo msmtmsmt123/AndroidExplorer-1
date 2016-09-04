@@ -215,14 +215,14 @@ public class ListFragment extends Fragment {
 
         if (myAdapter != null) {
 
-            myAdapter.refreshEvents(listViewType, mMemoryCache, getActivity(), this, fileDirLlist, iconFileDirLlist, fileModDate, fileSizeList, file.toString(), imgDisplayType);
+            myAdapter.refreshEvents(listViewType, mMemoryCache, getActivity(),getActivity().getApplicationContext(),this, fileDirLlist, iconFileDirLlist, fileModDate, fileSizeList, file.toString(), imgDisplayType);
             /*updateFab(0);
             selectionMode=false;*/
 
 
         } else {
 
-            myAdapter = new CustomAdapter(listViewType, mMemoryCache, getActivity(), this, fileDirLlist, iconFileDirLlist, fileModDate, fileSizeList, file.toString(), imgDisplayType);
+            myAdapter = new CustomAdapter(listViewType, mMemoryCache, getActivity(),getActivity().getApplicationContext(), this, fileDirLlist, iconFileDirLlist, fileModDate, fileSizeList, file.toString(), imgDisplayType);
             if (listViewType.equals(1)) {
                 lv.setAdapter(myAdapter);
             } else {

@@ -17,6 +17,7 @@ import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
+import android.support.v4.graphics.drawable.DrawableCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -69,6 +70,7 @@ public class MainActivity extends AppCompatActivity
     private File newFolder;
     private LinearLayout pathBarContainer;
     private HorizontalScrollView horizontalScrollView;
+    private HorizontalScrollView MenuHScrollView;
     private CustomAdapter currentAdapter;
     private boolean selectionMode;
     private FloatingActionButton fab;
@@ -81,7 +83,9 @@ public class MainActivity extends AppCompatActivity
     private ImageButton cutBtn;
     private ImageButton renameBtn;
     private ImageButton selectAllBtn;
+    private ImageButton fileInfoBtn;
     private  boolean allItemsSelected;
+    private boolean currPathFav;
     private Intent starterIntent;
     private ArrayList<File> dirList = new ArrayList<>();
 
@@ -130,18 +134,20 @@ public class MainActivity extends AppCompatActivity
         cutBtn=(ImageButton) findViewById(R.id.cutbutton);
         renameBtn=(ImageButton) findViewById(R.id.renamebutton);
         selectAllBtn=(ImageButton) findViewById(R.id.selectallbutton);
+        fileInfoBtn=(ImageButton) findViewById(R.id.infoButton);
 
         pathBarContainer = (LinearLayout) findViewById(R.id.pathbarContainer);
         horizontalScrollView = (HorizontalScrollView) findViewById(R.id.horizontalScrollView);
         fragment = (ListFragment) getFragmentManager()
                 .findFragmentById(R.id.mainFragment);
+        MenuHScrollView=(HorizontalScrollView) findViewById(R.id.popUpMenu);
 
         addFolderBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 view.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.image_click));
-                toggleMenu();
+
 
                 final EditText folderNameEntry=new EditText((MainActivity.this));
                 folderNameEntry.setInputType(InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS);
@@ -182,6 +188,15 @@ public class MainActivity extends AppCompatActivity
                                         newFolder.mkdirs();
                                         updateWholeScreen(newFolder.getParentFile());
                                         d.dismiss();
+                                        toggleMenu();
+                                        final Handler handler = new Handler();
+                                        handler.postDelayed(new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                Snackbar.make(horizontalScrollView, "New folder added!", Snackbar.LENGTH_SHORT)
+                                                        .setAction("Action", null).show();
+                                            }
+                                        }, 150);
                                     }
 
                                 }
@@ -202,7 +217,7 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View view) {
                 view.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.image_click));
 
-                toggleMenu();
+
 
                 final EditText folderNameEntry=new EditText((MainActivity.this));
                 folderNameEntry.setInputType(InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS);
@@ -246,7 +261,16 @@ public class MainActivity extends AppCompatActivity
                                             e.printStackTrace();
                                         }
                                         updateWholeScreen(newFolder.getParentFile());
+                                        toggleMenu();
                                         d.dismiss();
+                                        final Handler handler = new Handler();
+                                        handler.postDelayed(new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                Snackbar.make(horizontalScrollView, "New file added!", Snackbar.LENGTH_SHORT)
+                                                        .setAction("Action", null).show();
+                                            }
+                                        }, 150);
                                     }
 
                                 }
@@ -266,6 +290,16 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view) {
                 view.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.image_click));
+                Drawable drw;
+                if (!currPathFav) {
+                    drw= ContextCompat.getDrawable(getApplicationContext(), R.drawable.ic_bookmark_white);
+                } else {
+                    drw= ContextCompat.getDrawable(getApplicationContext(), R.drawable.ic_bookmark_border_white);
+                }
+
+                addFavoriteBtn.setImageDrawable(drw);
+
+                currPathFav=!currPathFav;
             }
         });
 
@@ -273,7 +307,6 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view) {
                 view.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.image_click));
-                toggleMenu();
 
                 // Initialise and design delete dialog elements.
                 dirList=fragment.getDirList();
@@ -310,27 +343,31 @@ public class MainActivity extends AppCompatActivity
                                 @Override
                                 public void onClick(DialogInterface dialog,
                                                     int which) {
-                                    Snackbar.make(horizontalScrollView, "Deleted!", Snackbar.LENGTH_SHORT)
-                                            .setAction("Action", null).show();
-                                    for (int i=0;i<checkedItems.length;i++){
+                                                                        for (int i=0;i<checkedItems.length;i++){
                                         if (checkedItems[i]) {
                                            dirList.get(i).delete();
                                         }
                                     }
                                     updateWholeScreen(fragment.getCurrDir());
-                                    onBackPressed();
+                                  //  onBackPressed();
                                     dialog.dismiss();
+                                    toggleMenu();
+
+
+                                    final Handler handler = new Handler();
+                                    handler.postDelayed(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            Snackbar.make(horizontalScrollView, "Deleted!", Snackbar.LENGTH_SHORT)
+                                                    .setAction("Action", null).show();
+                                        }
+                                    }, 150);
                                 }
                             });
                     builder.setNegativeButton(R.string.negative_response_button, null);
                     builder.show();
 
-                } else {
-
-                    Snackbar.make(view, "You have not selected anything.", Snackbar.LENGTH_SHORT)
-                            .setAction("Action", null).show();
                 }
-
             }
 
         });
@@ -367,8 +404,10 @@ public class MainActivity extends AppCompatActivity
                     public void run() {
                         // Do something after 5s = 5000ms
                         if (allItemsSelected) {
+                            updateFab(3);
                             currentAdapter.removeSelection();
                         } else {
+                            updateFab(2);
                             currentAdapter.selectAll();
                         }
                         allItemsSelected=!allItemsSelected;
@@ -378,6 +417,14 @@ public class MainActivity extends AppCompatActivity
 
             }
         });
+
+        fileInfoBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                view.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.image_click));
+            }
+        });
+
 
 
 
@@ -408,7 +455,7 @@ public class MainActivity extends AppCompatActivity
 
 
     public void updateWholeScreen(File file) {
-
+        currPathFav=false;
         fragment.populateScreen(file);
         currentAdapter = fragment.getMyAdapter();
         updateFab(0);
@@ -451,16 +498,16 @@ public class MainActivity extends AppCompatActivity
             } else {
                 rotateFabBackward();
             }
-            popUpMenu.startAnimation(outToLeftAnimation());
-            popUpMenu.setVisibility(View.GONE);
+            MenuHScrollView.startAnimation(outToLeftAnimation());
+            MenuHScrollView.setVisibility(View.GONE);
         } else {
             if (selectionMode) {
                 rotateFabFullForward();
             } else {
                 rotateFabForward();
             }
-            popUpMenu.startAnimation(inFromLeftAnimation());
-            popUpMenu.setVisibility(View.VISIBLE);
+            MenuHScrollView.startAnimation(inFromLeftAnimation());
+            MenuHScrollView.setVisibility(View.VISIBLE);
         }
 
         openMenu = !openMenu;
@@ -541,6 +588,8 @@ public class MainActivity extends AppCompatActivity
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             if (selectionMode) {
                 updateFab(1);
+
+
                 fab.setImageDrawable(getResources().getDrawable(R.drawable.ic_menu_white, this.getTheme()));
             } else {
                 updateFab(0);
@@ -550,8 +599,8 @@ public class MainActivity extends AppCompatActivity
         } else {
 
             if (selectionMode) {
-                updateFab(1);
-                fab.setImageDrawable(ContextCompat.getDrawable(this,R.drawable.ic_menu_white));
+          updateFab(1);
+                if (currentAdapter.getCheckedCOunt()==1) updateFab(2);
             } else {
                 updateFab(0);
                 fab.setImageDrawable(ContextCompat.getDrawable(this,R.drawable.add_white));
@@ -560,52 +609,101 @@ public class MainActivity extends AppCompatActivity
 
     }
 
+public void setMenuType() {
+    int cCount=currentAdapter.getCheckedCOunt();
 
+    switch (cCount) {
+
+        case 0: updateFab(3);
+                break;
+        case 1: updateFab(1);
+               break;
+        default: updateFab(2);
+            break;
+    }
+
+
+}
     public void updateFab(int fabmode) {
         // 0 - no selection
         // 1 - selection, one file
         // 2 - selection, two files
+        Log.d("CHECKEDCOUNT","Update Fab:" + fabmode);
         switch (fabmode) {
-            case 0:
-                addFileBtn.setVisibility(View.VISIBLE);
-                addFolderBtn.setVisibility(View.VISIBLE);
-                addFavoriteBtn.setVisibility(View.VISIBLE);
-                selectAllBtn.setVisibility(View.GONE);
-                deleteItemBtn.setVisibility(View.GONE);
-                copyBtn.setVisibility(View.GONE);
-                cutBtn.setVisibility(View.GONE);
-                renameBtn.setVisibility(View.GONE);
+            case 0:setViewVisibility(addFileBtn,View.VISIBLE,0);
+                   setViewVisibility(addFolderBtn,View.VISIBLE,50);
+                setViewVisibility(addFavoriteBtn,View.VISIBLE,100);
+                setViewVisibility(selectAllBtn,View.GONE,150);
+                setViewVisibility(deleteItemBtn,View.GONE,200);
+                setViewVisibility(copyBtn,View.GONE,250);
+                setViewVisibility(cutBtn,View.GONE,300);
+                setViewVisibility(renameBtn,View.GONE,350);
+                setViewVisibility(fileInfoBtn,View.GONE,400);
                 break;
-            case 1:
-
-                addFileBtn.setVisibility(View.GONE);
-                addFolderBtn.setVisibility(View.GONE);
-                addFavoriteBtn.setVisibility(View.GONE);
-                selectAllBtn.setVisibility(View.VISIBLE);
-                deleteItemBtn.setVisibility(View.VISIBLE);
-                copyBtn.setVisibility(View.VISIBLE);
-                cutBtn.setVisibility(View.VISIBLE);
-                renameBtn.setVisibility(View.VISIBLE);
-                break;
-            case 2:
-                addFileBtn.setVisibility(View.GONE);
-                addFolderBtn.setVisibility(View.GONE);
-                addFavoriteBtn.setVisibility(View.GONE);
-                selectAllBtn.setVisibility(View.VISIBLE);
-                deleteItemBtn.setVisibility(View.VISIBLE);
-                copyBtn.setVisibility(View.VISIBLE);
-                cutBtn.setVisibility(View.VISIBLE);
-                renameBtn.setVisibility(View.GONE);
-
-             /*   if (currentAdapter.getCheckedCOunt() > 1) {
-                    if (fam_select.getChildCount() == 10) fam_select.removeMenuButton(fab_rename);
-                } else {
-                    if (fam_select.getChildCount() != 10) fam_select.addMenuButton(fab_rename, 0);
-                }*/
+            case 1:setViewVisibility(addFileBtn,View.GONE,0);
+                setViewVisibility(addFolderBtn,View.GONE,0);
+                setViewVisibility(addFavoriteBtn,View.GONE,0);
+                setViewVisibility(selectAllBtn,View.VISIBLE,0);
+                setViewVisibility(deleteItemBtn,View.VISIBLE,50);
+                setViewVisibility(copyBtn,View.VISIBLE,100);
+                setViewVisibility(cutBtn,View.VISIBLE,150);
+                setViewVisibility(renameBtn,View.VISIBLE,200);
+                setViewVisibility(fileInfoBtn,View.VISIBLE,250);
 
                 break;
+            case 2:setViewVisibility(addFileBtn,View.GONE,0);
+                setViewVisibility(addFolderBtn,View.GONE,0);
+                setViewVisibility(addFavoriteBtn,View.GONE,0);
+                setViewVisibility(selectAllBtn,View.VISIBLE,0);
+                setViewVisibility(deleteItemBtn,View.VISIBLE,0);
+                setViewVisibility(copyBtn,View.VISIBLE,0);
+                setViewVisibility(cutBtn,View.VISIBLE,0);
+                setViewVisibility(renameBtn,View.GONE,200);
+                setViewVisibility(fileInfoBtn,View.GONE,250);
+                break;
+            case 3: setViewVisibility(addFileBtn,View.GONE,0);
+                setViewVisibility(addFolderBtn,View.GONE,0);
+                setViewVisibility(addFavoriteBtn,View.GONE,0);
+                setViewVisibility(selectAllBtn,View.VISIBLE,0);
+                setViewVisibility(deleteItemBtn,View.GONE,250);
+                setViewVisibility(copyBtn,View.GONE,200);
+                setViewVisibility(cutBtn,View.GONE,150);
+                setViewVisibility(renameBtn,View.GONE,100);
+                setViewVisibility(fileInfoBtn,View.GONE,50);
+                break;
+            default:break;
 
         }
+
+    }
+
+    public void setViewVisibility(View v,int state,int delay) {
+        final int vState=state;
+        final View vView=v;
+        final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                if (vState==View.GONE) {
+                    // v.animate().alpha(0.0f);
+                    if (vView.getVisibility()!=View.GONE){
+                        vView.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.menu_disappear));
+                        vView.setVisibility(View.GONE);
+                    }
+
+                } else {
+                    //    v.animate().alpha(1.0f);
+                    if (vView.getVisibility()!=View.VISIBLE) {
+                        vView.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(), R.anim.menu_appear));
+                        vView.setVisibility(View.VISIBLE);
+                    }
+
+                }
+            }
+        }, delay);
+
+
+
 
     }
 

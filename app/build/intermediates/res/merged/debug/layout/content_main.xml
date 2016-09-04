@@ -19,95 +19,109 @@
 
     </fragment>
 
-    <LinearLayout
-        android:id="@+id/popUpMenuNoSelect"
-        android:orientation="horizontal"
+    <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="@dimen/fab_normal"
-        android:background="@drawable/pop_up_menu"
+        android:id="@+id/popUpMenu"
         android:layout_gravity="bottom"
         android:clickable="true"
+        android:layout_height="@dimen/fab_normal"
+        android:background="@drawable/pop_up_menu"
         android:layout_marginBottom="@dimen/fab_margin"
         android:layout_marginRight="@dimen/pop_menu_margin"
         android:visibility="gone">
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/newfolderbutton"
-            android:background="@drawable/ic_create_new_folder_white"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="@dimen/popup_menu_padding"
-            android:layout_marginRight="@dimen/popup_menu_padding"
-            android:adjustViewBounds="true" />
+    <LinearLayout
+        android:id="@+id/popUpMenuNoSelect"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/fab_normal"
+        android:clickable="false">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/newfolderbutton"
+                android:background="@drawable/ic_create_new_folder_white"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/popup_menu_padding"
+                android:layout_marginRight="@dimen/popup_menu_padding"
+                android:adjustViewBounds="true" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/newfilebutton"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_create_new_file_white"
+                android:layout_marginLeft="@dimen/popup_menu_padding"
+                android:layout_marginRight="@dimen/popup_menu_padding" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/addfavbutton"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_bookmark_border_white"
+                android:layout_marginLeft="@dimen/popup_menu_padding"
+                android:layout_marginRight="@dimen/popup_menu_padding" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/selectallbutton"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_select_all_white"
+                android:layout_marginLeft="@dimen/popup_menu_padding"
+                android:layout_marginRight="@dimen/popup_menu_padding"
+                android:clickable="false" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/deletebutton"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_delete_white"
+                android:layout_marginLeft="@dimen/popup_menu_padding"
+                android:layout_marginRight="@dimen/popup_menu_padding" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/copybutton"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_content_copy_white"
+                android:layout_marginLeft="@dimen/popup_menu_padding"
+                android:layout_marginRight="@dimen/popup_menu_padding" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cutbutton"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_content_cut_white"
+                android:layout_marginLeft="@dimen/popup_menu_padding"
+                android:layout_marginRight="@dimen/popup_menu_padding" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/renamebutton"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_mode_edit_white"
+                android:layout_marginLeft="@dimen/popup_menu_padding"
+                android:layout_marginRight="@dimen/popup_menu_padding" />
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/newfilebutton"
+            android:id="@+id/infoButton"
             android:layout_gravity="center_vertical"
-            android:background="@drawable/ic_create_new_file_white"
+            android:background="@drawable/ic_info_white"
             android:layout_marginLeft="@dimen/popup_menu_padding"
             android:layout_marginRight="@dimen/popup_menu_padding" />
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/addfavbutton"
-            android:layout_gravity="center_vertical"
-            android:background="@drawable/ic_bookmark_border_white"
-            android:layout_marginLeft="@dimen/popup_menu_padding"
-            android:layout_marginRight="@dimen/popup_menu_padding" />
-
-
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/deletebutton"
-            android:layout_gravity="center_vertical"
-            android:background="@drawable/ic_delete_white"
-            android:layout_marginLeft="@dimen/popup_menu_padding"
-            android:layout_marginRight="@dimen/popup_menu_padding" />
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/copybutton"
-            android:layout_gravity="center_vertical"
-            android:background="@drawable/ic_content_copy_white"
-            android:layout_marginLeft="@dimen/popup_menu_padding"
-            android:layout_marginRight="@dimen/popup_menu_padding" />
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/cutbutton"
-            android:layout_gravity="center_vertical"
-            android:background="@drawable/ic_content_cut_white"
-            android:layout_marginLeft="@dimen/popup_menu_padding"
-            android:layout_marginRight="@dimen/popup_menu_padding" />
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/renamebutton"
-            android:layout_gravity="center_vertical"
-            android:background="@drawable/ic_mode_edit_white"
-            android:layout_marginLeft="@dimen/popup_menu_padding"
-            android:layout_marginRight="@dimen/popup_menu_padding" />
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/selectallbutton"
-            android:layout_gravity="center_vertical"
-            android:background="@drawable/ic_select_all_white"
-            android:layout_marginLeft="@dimen/popup_menu_padding"
-            android:layout_marginRight="@dimen/popup_menu_padding"
-            android:clickable="false" />
 
     </LinearLayout>
-
+</HorizontalScrollView>
 
 </FrameLayout>

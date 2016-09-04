@@ -1,2 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="fcc945a86ebcbf527429acb8216ec7dae2c06417">
+        <dex dex="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.0_2b34afe3a7c54c8052516b84719c6ab3e69f406a/classes.dex" />
+    </item>
+    <item
+        jar="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="beac40bcc8a320a896dd15f5109cfcaea5e1e0e3">
+        <dex dex="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.0_591a6078056ca68ba0f3ffc6821ee7efc4e6d343/classes.dex" />
+    </item>
+    <item
+        jar="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.github.clans/fab/1.6.4/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1c3b9743fe8bb166a90a7e98b9b9f1f8021d80cd">
+        <dex dex="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.clans-fab-1.6.4_5f23278c3b897fa8a84cf81d066edf3793a9deed/classes.dex" />
+    </item>
+    <item
+        jar="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="032a4b53def5e2ceedfc2e793b126c0163cfa1dd">
+        <dex dex="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_2d3d183169871f143c5cd1c5fe0031f900cc1703/classes.dex" />
+    </item>
+    <item
+        jar="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c3c638be6e650b165ab9ae144857b64e82787fad">
+        <dex dex="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.0_740f68425eb95738f11b1399db17b7a55365d512/classes.dex" />
+    </item>
+    <item
+        jar="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/design/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="23eb0d2998a782213b56168cbf23a0688b9111d9">
+        <dex dex="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.2.0_ec799aad6838939b46fe3bcdc343aa596fb6812a/classes.dex" />
+    </item>
+    <item
+        jar="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="77e341fbbbedaebcf1efe605a58bd914459e1444">
+        <dex dex="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d15ae785f5ed7e016ea49f2349ed791f094b39d9/classes.dex" />
+    </item>
+    <item
+        jar="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c84e216d9bf618464d6b9564d71d9a656433e7c4">
+        <dex dex="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.0_9afd16b792b839ca45bf8731dee38d3df233e1b4/classes.dex" />
+    </item>
+    <item
+        jar="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="6e02e34594ebe9c0501ffda8dd48497f81b82977">
+        <dex dex="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_c42a352a765e2349ebc4e705589ba9e4b463526e/classes.dex" />
+    </item>
+    <item
+        jar="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f9b41622897665678d31d78e57a361cb0cebcb0d">
+        <dex dex="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.0_bf181de53329a9ad0e27ae826d9eea2c6660d74a/classes.dex" />
+    </item>
+    <item
+        jar="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="6eb9107eb34d2fe2b020662b7fbbec991dcba846">
+        <dex dex="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.0_dd10bc698df840790a3b0449120ec971834c6d37/classes.dex" />
+    </item>
+    <item
+        jar="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c755536e5a100d9c76c8ea0b72f76c018f7a9de2">
+        <dex dex="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.2.0_8d8a5a164f9113666f733782b86d87040f642d34/classes.dex" />
+    </item>
+    <item
+        jar="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="95fd6b435cdd164e8a39966c573256cef3ea67a7">
+        <dex dex="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_38f5d0e6123053bf53347d3d03614961689617a0/classes.dex" />
+    </item>
+    <item
+        jar="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.ogaclejapan.arclayout/library/1.1.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="e73be64ef3e56ecc035bd298d274136e2ad66d20">
+        <dex dex="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.ogaclejapan.arclayout-library-1.1.0_b138f642a3987ecf12d867e246bd89e0e5b3fd06/classes.dex" />
+    </item>
+    <item
+        jar="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="60d7b23621d31e6f42f4f76f16af467e57a20cda">
+        <dex dex="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_b2a226bb1ffa1d054986d095573777e377d93404/classes.dex" />
+    </item>
+    <item
+        jar="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="771b3cc0e597b54da25f8086ba73180c59c6bc71">
+        <dex dex="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_042f59da29c41e56942df2a88eafeeaecb85f4a8/classes.dex" />
+    </item>
+    <item
+        jar="/home/ninomarlou/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.0/support-annotations-24.2.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="6be858a75633b1f0a2d24cad740db57775cb6871">
+        <dex dex="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.0_7609a6dcd1afc8f40e2053995a12976939e06cf7/classes.dex" />
+    </item>
+    <item
+        jar="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="045be695d968dd707691cc55d23746dbf8cf569a">
+        <dex dex="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_d6f6cc133b0d48d5f4d7e95e70609995ea22ac84/classes.dex" />
+    </item>
+    <item
+        jar="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f3ee23ef25c9a8fe3d40246d0b7097267963a612">
+        <dex dex="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.0_081c5fec8ba01c37cd96370ebf960a94786912d2/classes.dex" />
+    </item>
+    <item
+        jar="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="45f5eda279825ff470e3f51019d374d1ef61e000">
+        <dex dex="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.0_9ecc2bdb165547d067eb6e267c92daa8c15ac8dc/classes.dex" />
+    </item>
+    <item
+        jar="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.sa90.materialarcmenu/library/1.4.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="9e87328692c61c59a52ec7a1395b6f10f04708be">
+        <dex dex="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.sa90.materialarcmenu-library-1.4.1_86a013f988424f280df9d6cd6ad2b8dfecc4f7b2/classes.dex" />
+    </item>
+    <item
+        jar="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d8bd2268fdcbfd52c76ade65d9900cd8def93a44">
+        <dex dex="/home/ninomarlou/Android/Projects/AndroidExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.0_4c9ab46647619fdd3c6ea82445eccd3fef25804b/classes.dex" />
+    </item>
+
+</items>

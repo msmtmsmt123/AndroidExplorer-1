@@ -1,7 +1,9 @@
 package com.example.user.androidexplorer;
 
 import android.app.Activity;
+import android.content.ActivityNotFoundException;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
@@ -13,14 +15,20 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
+import android.graphics.drawable.ScaleDrawable;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Handler;
+import android.support.design.widget.Snackbar;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.graphics.drawable.DrawableCompat;
 import android.support.v4.util.LruCache;
+import android.support.v7.app.AlertDialog;
+import android.support.v7.widget.LinearLayoutCompat;
+import android.text.TextUtils;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,7 +37,9 @@ import android.widget.BaseAdapter;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -38,6 +48,7 @@ import java.lang.ref.WeakReference;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 
 class CustomAdapter extends BaseAdapter {
@@ -64,8 +75,10 @@ class CustomAdapter extends BaseAdapter {
     private int xCoord;
     private int yCoord;
     private ListFragment callFragment;
+    private Context appContext;
+    PackageManager pm;
 
-    public CustomAdapter(Integer viewTyp, LruCache<String, Bitmap> memCache, Activity mainActivity, ListFragment fragment, ArrayList<String> prgmNameList, ArrayList<Integer> prgmImages, ArrayList<Date> lastDate, ArrayList<String> fileSize, String path, Integer imgDisplayType) {
+    public CustomAdapter(Integer viewTyp, LruCache<String, Bitmap> memCache, Activity mainActivity, Context mainContext,ListFragment fragment, ArrayList<String> prgmNameList, ArrayList<Integer> prgmImages, ArrayList<Date> lastDate, ArrayList<String> fileSize, String path, Integer imgDisplayType) {
         // TODO Auto-generated constructor stub
         result = prgmNameList;
         mCheckedState = new Boolean[prgmNameList.size()];
@@ -74,12 +87,14 @@ class CustomAdapter extends BaseAdapter {
         }
         imgDispType = imgDisplayType;
         context =  mainActivity;
+        appContext=mainContext;
         callFragment = fragment;
         imageId = prgmImages;
         currPath = path;
         modDate = lastDate;
         fSize = fileSize;
         hideCB = true;
+        pm = appContext.getPackageManager();
         mMemoryCache = memCache;
         viewType = viewTyp;
         if (viewType.equals(LIST_AS_DETAIL)) {
@@ -165,7 +180,7 @@ class CustomAdapter extends BaseAdapter {
 
     public int getCheckedCOunt() {
         int counter = 0;
-        for (int i = 0; i < mCheckedState.length; i++) {
+        for (int i = 1; i < mCheckedState.length; i++) {
             if (mCheckedState[i]) counter++;
         }
         return counter;
@@ -206,15 +221,17 @@ class CustomAdapter extends BaseAdapter {
         notifyDataSetChanged();
     }
 
-    public void refreshEvents(Integer viewTyp, LruCache<String, Bitmap> memCache, Activity mainActivity, ListFragment fragment, ArrayList<String> prgmNameList, ArrayList<Integer> prgmImages, ArrayList<Date> lastDate, ArrayList<String> fileSize, String path, Integer imgDisplayType) {
+    public void refreshEvents(Integer viewTyp, LruCache<String, Bitmap> memCache, Activity mainActivity, Context mainContext,ListFragment fragment, ArrayList<String> prgmNameList, ArrayList<Integer> prgmImages, ArrayList<Date> lastDate, ArrayList<String> fileSize, String path, Integer imgDisplayType) {
         result = prgmNameList;
         context = mainActivity;
+        appContext=mainContext;
         callFragment = fragment;
         imageId = prgmImages;
         currPath = path;
         modDate = lastDate;
         fSize = fileSize;
         imgDispType = imgDisplayType;
+        pm = appContext.getPackageManager();
         hideCB = true;
         mMemoryCache = memCache;
         viewType = viewTyp;
@@ -357,7 +374,7 @@ class CustomAdapter extends BaseAdapter {
                 // update your model (or other business logic) based on isChecked
                 int getPosition = (Integer) buttonView.getTag();
                 mCheckedState[getPosition] = buttonView.isChecked();
-                //((MainActivity) context).setMenuType();
+                ((MainActivity) context).setMenuType();
             }
         });
         holder.cb.setTag(position);
@@ -379,7 +396,7 @@ class CustomAdapter extends BaseAdapter {
 
         if (imgDispType.equals(DISPLAY_AS_ICON)) {
 
-            Drawable mDrawable = ContextCompat.getDrawable(context,imageId.get(position));
+            Drawable mDrawable = ContextCompat.getDrawable(appContext,imageId.get(position));
             Drawable wrappedDrawable = DrawableCompat.wrap(mDrawable);
             wrappedDrawable = wrappedDrawable.mutate();
             DrawableCompat.setTint(wrappedDrawable, ContextCompat.getColor(context, R.color.list_icon_color));
@@ -391,31 +408,32 @@ class CustomAdapter extends BaseAdapter {
 
             if (currFile.isFile()) {
 
-                String ext = getExtension(currFile);
+                String ext =  getExtension(currFile) ;   //MimeTypeMap.getFileExtensionFromUrl(currFile.getAbsolutePath());
 
                 switch (ext) {
                     case "jpg":
-                        loadBitmap(currFile, holder.img,holder.progressBar,context);
+                        loadBitmap(currFile, holder.img,holder.progressBar,appContext);
                         break;
                     case "jpeg":
-                        loadBitmap(currFile, holder.img,holder.progressBar,context);
+                        loadBitmap(currFile, holder.img,holder.progressBar,appContext);
                         break;
                     case "png":
-                        loadBitmap(currFile, holder.img,holder.progressBar,context);
+                        loadBitmap(currFile, holder.img,holder.progressBar,appContext);
                         break;
                     case "bmp":
-                        loadBitmap(currFile, holder.img,holder.progressBar,context);
+                        loadBitmap(currFile, holder.img,holder.progressBar,appContext);
                         break;
                     case "apk":  ;
+                            // get icon for apk files
                             String filePath = currFile.getPath();
-                            PackageInfo packageInfo = context.getPackageManager().getPackageArchiveInfo(filePath, PackageManager.GET_ACTIVITIES);
+                            PackageInfo packageInfo = pm.getPackageArchiveInfo(filePath, PackageManager.GET_ACTIVITIES);
                             if(packageInfo != null) {
                                 ApplicationInfo appInfo = packageInfo.applicationInfo;
                                 if (Build.VERSION.SDK_INT >= 8) {
                                     appInfo.sourceDir = filePath;
                                     appInfo.publicSourceDir = filePath;
                                 }
-                                final Drawable icon = appInfo.loadIcon(context.getPackageManager());
+                                final Drawable icon = appInfo.loadIcon(appContext.getPackageManager());
                                 holder.img.setImageDrawable(icon);
                                 holder.progressBar.setVisibility(View.GONE);
                                 holder.img.setVisibility(View.VISIBLE);
@@ -424,39 +442,44 @@ class CustomAdapter extends BaseAdapter {
                     default:
                         holder.progressBar.setVisibility(View.GONE);
                         holder.img.setVisibility(View.VISIBLE);
-
                         String mimeType = MimeTypeMap.getSingleton().getMimeTypeFromExtension(ext);
-                        if (mimeType != null || mimeType == "xxx") {
-                            final Intent i = new Intent();
-                            i.setAction(android.content.Intent.ACTION_VIEW);
+                        if (mimeType != null) {
+                            // If Mimetype is not null, get default app and use it's icon
+                            Intent i = new Intent();
+                            i.setAction(Intent.ACTION_VIEW);
                             i.setDataAndType(Uri.fromFile(currFile), mimeType);
-                            PackageManager pm = context.getPackageManager();
                             final ResolveInfo mInfo = pm.resolveActivity(i, 0);
+                            Log.d("MIMETYPE","Filename:" + currFile.getName() + ", Mimetype:" + mimeType + ", Extension is:" + ext + ", Default App:" + pm.getApplicationLabel(mInfo.activityInfo.applicationInfo));
 
                             if (pm.getApplicationLabel(mInfo.activityInfo.applicationInfo).equals("Android system")) {
-                                Drawable mDrawable = ContextCompat.getDrawable(context,imageId.get(position));
+                                // if Mimetype is not null by  the default app is Android system, use in-built icon pack
+                                Drawable mDrawable = ContextCompat.getDrawable(appContext,imageId.get(position));
                                 Drawable wrappedDrawable = DrawableCompat.wrap(mDrawable);
                                 wrappedDrawable = wrappedDrawable.mutate();
-                                DrawableCompat.setTint(wrappedDrawable, ContextCompat.getColor(context, R.color.list_icon_color));
+                                DrawableCompat.setTint(wrappedDrawable, ContextCompat.getColor(appContext, R.color.list_icon_color));
                                 holder.img.setImageDrawable(wrappedDrawable);
+
                             } else {
-                                final Drawable icon = mInfo.loadIcon(context.getPackageManager());
+
+                                final Drawable icon = mInfo.loadIcon(appContext.getPackageManager());
                                 holder.img.setImageDrawable(icon);
                             }
 
                         } else {
-                            Drawable mDrawable = ContextCompat.getDrawable(context,imageId.get(position));
+                            // If Mimetype is null, use built in icon pack
+
+                            Drawable mDrawable = ContextCompat.getDrawable(appContext,imageId.get(position));
                             Drawable wrappedDrawable = DrawableCompat.wrap(mDrawable);
                             wrappedDrawable = wrappedDrawable.mutate();
-                            DrawableCompat.setTint(wrappedDrawable, ContextCompat.getColor(context, R.color.list_icon_color));
+                            DrawableCompat.setTint(wrappedDrawable, ContextCompat.getColor(appContext, R.color.list_icon_color));
                             holder.img.setImageDrawable(wrappedDrawable);
-                            //holder.img.setImageResource(imageId.get(position));
 
                         }
                         break;
                 }
 
             } else {
+                // If item is a directory, get in-built icon as defined the the MyFileList class.
                 holder.progressBar.setVisibility(View.GONE);
                 holder.img.setVisibility(View.VISIBLE);
                 holder.img.setImageResource(imageId.get(position));
@@ -476,9 +499,13 @@ class CustomAdapter extends BaseAdapter {
 
             @Override
             public void onSingleClick(View v) {
+
+                // Do this when an item is clicked.
+
                 if (!hideCB) {
+                    // if in selection mode, check item being clicked.
                     holder.cb.setChecked(!holder.cb.isChecked());
-                    ((MainActivity) context).updateFab(2);
+                    //((MainActivity) context).updateFab(2);
                 } else {
                     if (dir.isDirectory()) {
                         final Handler handler = new Handler();
@@ -493,26 +520,31 @@ class CustomAdapter extends BaseAdapter {
                     } else {
                         // Open file.
                         String ext = getExtension(dir);
-                        String mimeType = MimeTypeMap.getSingleton().getMimeTypeFromExtension(ext);
-                        if (mimeType != null || mimeType == "xxx") {
-
-                            final Intent i = new Intent();
-                            i.setAction(android.content.Intent.ACTION_VIEW);
-                            i.setDataAndType(Uri.fromFile(dir), mimeType);
-                            final Handler handler = new Handler();
-                            handler.postDelayed(new Runnable() {
-                                @Override
-                                public void run() {
-                                    // Do something after 5s = 5000ms
-                                    context.startActivity(i);
-                                }
-                            }, 120);
-
+                        MimeTypeMap myMime = MimeTypeMap.getSingleton();
+                        String mimeType = myMime.getMimeTypeFromExtension(ext);
+                        Intent newIntent = new Intent(Intent.ACTION_VIEW);
+                        if (mimeType==null) {
+                            String fMimeType=getCustomMimeType(ext);
+                            //Log.d("MIMETYPE",fMimeType);
+                            if (fMimeType!=null) {
+                                newIntent.setDataAndType(Uri.fromFile(dir),getCustomMimeType(ext));
+                                newIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                appContext.startActivity(newIntent);
+                            } else {
+                                newIntent.setDataAndType(Uri.fromFile(dir),"*/*");
+                                Intent j = Intent.createChooser(newIntent, "Open file with:");
+                                j.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                appContext.startActivity(j);
+                            }
 
                         } else {
-//                           /* Snackbar.make(v, R.string.no_app_in_phone ,  Snackbar.LENGTH_SHORT)
-//                                    .setAction("Action", null).show();*/
+
+                            newIntent.setDataAndType(Uri.fromFile(dir),mimeType);
+                            newIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                            appContext.startActivity(newIntent);
                         }
+
+
                     }
                 }
             }
@@ -542,6 +574,15 @@ class CustomAdapter extends BaseAdapter {
         CheckBox cb;
 
     }
+
+    public String getCustomMimeType(String ext) {
+
+        String result= MimeUtils.guessMimeTypeFromExtension(ext);
+
+        return result;
+    }
+
+
 
 
 }
